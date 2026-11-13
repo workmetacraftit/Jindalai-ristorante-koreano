@@ -31,9 +31,9 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <link rel="preload" href="/assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" type="image/avif" media="(max-width: 719px)" imagesrcset="/assets/img/hero-m-480.avif 480w, /assets/img/hero-m-720.avif 720w, /assets/img/hero-m-860.avif 860w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" media="(max-width: 719px)" imagesrcset="/assets/img/hero-m-480.avif 480w, /assets/img/hero-m-740.avif 740w, /assets/img/hero-m-850.avif 850w" imagesizes="100vw" fetchpriority="high">
 <link rel="preload" as="image" type="image/avif" media="(min-width: 720px)" imagesrcset="/assets/img/hero-1100.avif 1100w, /assets/img/hero-1600.avif 1600w, /assets/img/hero-2016.avif 2016w" imagesizes="100vw" fetchpriority="high">
-<link rel="stylesheet" href="/assets/css/style.css?v=1">
+<link rel="stylesheet" href="/assets/css/style.css?v=3">
 
 <script type="application/ld+json">
 {
@@ -97,6 +97,13 @@
 </script>
 </head>
 <body>
+<div class="ov" aria-hidden="true">
+  <div class="ov__mark">
+    <i class="ov__p ov__p--r"></i><i class="ov__p ov__p--g"></i><i class="ov__p ov__p--b"></i><i class="ov__p ov__p--v"></i>
+    <img class="ov__logo" src="/assets/img/logo-192.webp" width="116" height="116" alt="" fetchpriority="high">
+  </div>
+  <p class="ov__name">Jindalai</p>
+</div>
 <a class="skip" href="#contenuto">Vai al contenuto</a>
 
 <header class="top">
@@ -116,21 +123,25 @@
     </nav>
     <a class="btn btn--sm" href="#prenota">Prenota</a>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
 <main id="contenuto">
 
 <section class="hero" aria-labelledby="h-hero">
+  <div class="hero__media"><div class="hero__shift">
   <picture class="hero__img">
-    <source media="(max-width: 719px)" type="image/avif" srcset="/assets/img/hero-m-480.avif 480w, /assets/img/hero-m-720.avif 720w, /assets/img/hero-m-860.avif 860w" sizes="100vw">
-    <source media="(max-width: 719px)" type="image/webp" srcset="/assets/img/hero-m-480.webp 480w, /assets/img/hero-m-720.webp 720w, /assets/img/hero-m-860.webp 860w" sizes="100vw">
+    <source media="(max-width: 719px)" type="image/avif" srcset="/assets/img/hero-m-480.avif 480w, /assets/img/hero-m-740.avif 740w, /assets/img/hero-m-850.avif 850w" sizes="100vw">
+    <source media="(max-width: 719px)" type="image/webp" srcset="/assets/img/hero-m-480.webp 480w, /assets/img/hero-m-740.webp 740w, /assets/img/hero-m-850.webp 850w" sizes="100vw">
     <source type="image/avif" srcset="/assets/img/hero-1100.avif 1100w, /assets/img/hero-1600.avif 1600w, /assets/img/hero-2016.avif 2016w" sizes="100vw">
     <source type="image/webp" srcset="/assets/img/hero-1100.webp 1100w, /assets/img/hero-1600.webp 1600w, /assets/img/hero-2016.webp 2016w" sizes="100vw">
     <img src="/assets/img/hero-1600.webp" width="2016" height="1020" alt="L'ingresso di Jindalai in via Mascagni a Prato, di sera: l'insegna illuminata e i muri coperti da tende di luci calde" fetchpriority="high" decoding="async">
   </picture>
+  <canvas class="hero__spark" aria-hidden="true"></canvas>
+  </div></div>
   <div class="wrap hero__in">
     <p class="eyebrow"><span lang="ko">진달래</span> <span aria-hidden="true">·</span> <span lang="zh-Hans">金达莱</span> <span aria-hidden="true">·</span> Prato</p>
-    <h1 id="h-hero">Il barbecue coreano di Prato, acceso fino a mezzanotte.</h1>
+    <h1 id="h-hero"><span class="w"><span>Il</span></span> <span class="w"><span>barbecue</span></span> <span class="w"><span>coreano</span></span> <span class="w"><span>di</span></span> <span class="w"><span>Prato,</span></span> <span class="w"><span>acceso</span></span> <span class="w"><span>fino</span></span> <span class="w"><span>a</span></span> <span class="w"><span>mezzanotte.</span></span></h1>
     <p class="hero__lead">Carne marinata da cuocere sulla griglia al tavolo, spiedini, noodles freddi e i piatti di casa della cucina coreana.</p>
     <div class="hero__cta">
       <a class="btn" href="#prenota">
@@ -146,10 +157,13 @@
 <div class="lights" aria-hidden="true"></div>
 
 <section class="sec intro" aria-labelledby="h-intro">
-  <div class="wrap intro__grid">
-    <div class="intro__txt">
+  <div class="wrap">
+    <header class="intro__head">
       <p class="kicker">La griglia</p>
-      <h2 id="h-intro">Si cucina al tavolo, si mangia insieme.</h2>
+      <h2 id="h-intro" class="statement">Si cucina al tavolo, si mangia insieme.</h2>
+    </header>
+    <div class="intro__grid">
+    <div class="intro__txt">
       <p>Da Jindalai la carne arriva cruda, tagliata e marinata da noi: costine, entrecôte, bocconcini. La brace è davanti a te e ognuno cuoce il suo pezzo come gli piace, poi lo avvolge nella lattuga con la salsa.</p>
       <p>Intorno alla griglia girano i piatti della cucina coreana di casa: il naengmyeon in brodo ghiacciato, il bibimbap nella pietra rovente, i tteokbokki al formaggio. E gli spiedini, che sull'insegna stanno accanto al nome.</p>
       <ul class="facts">
@@ -170,8 +184,11 @@
         <img src="/assets/img/rose-840.webp" width="840" height="630" loading="lazy" decoding="async" alt="Fettine di manzo arrotolate a forma di rosa, servite su foglie di bambù">
       </picture>
     </div>
+    </div>
   </div>
 </section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track"><span class="mq">Galbi</span><i class="petal petal--r"></i><span class="mq mq--o"><span lang="ko">갈비</span></span><i class="petal petal--g"></i><span class="mq">Naengmyeon</span><i class="petal petal--b"></i><span class="mq mq--o"><span lang="ko">냉면</span></span><i class="petal petal--v"></i><span class="mq">Bibimbap</span><i class="petal petal--r"></i><span class="mq mq--o"><span lang="ko">비빔밥</span></span><i class="petal petal--g"></i><span class="mq">Tteokbokki</span><i class="petal petal--b"></i><span class="mq mq--o"><span lang="ko">떡볶이</span></span><i class="petal petal--v"></i><span class="mq">Pajeon</span><i class="petal petal--r"></i><span class="mq mq--o"><span lang="ko">파전</span></span><i class="petal petal--g"></i><span class="mq">Spiedini</span><i class="petal petal--b"></i><span class="mq mq--o"><span lang="ko">꼬치</span></span><i class="petal petal--v"></i><span class="mq">Galbi</span><i class="petal petal--r"></i><span class="mq mq--o"><span lang="ko">갈비</span></span><i class="petal petal--g"></i><span class="mq">Naengmyeon</span><i class="petal petal--b"></i><span class="mq mq--o"><span lang="ko">냉면</span></span><i class="petal petal--v"></i><span class="mq">Bibimbap</span><i class="petal petal--r"></i><span class="mq mq--o"><span lang="ko">비빔밥</span></span><i class="petal petal--g"></i><span class="mq">Tteokbokki</span><i class="petal petal--b"></i><span class="mq mq--o"><span lang="ko">떡볶이</span></span><i class="petal petal--v"></i><span class="mq">Pajeon</span><i class="petal petal--r"></i><span class="mq mq--o"><span lang="ko">파전</span></span><i class="petal petal--g"></i><span class="mq">Spiedini</span><i class="petal petal--b"></i><span class="mq mq--o"><span lang="ko">꼬치</span></span><i class="petal petal--v"></i></div></div>
 
 <section class="sec piatti" id="piatti" aria-labelledby="h-piatti">
   <div class="wrap">
@@ -181,12 +198,14 @@
       <p class="sec__lead">Una selezione dei piatti più richiesti. Il menu completo con i prezzi lo trovi al tavolo.</p>
     </header>
 
-    <h3 class="group"><span class="petal petal--r" aria-hidden="true"></span>Da grigliare al tavolo</h3>
+    <div class="grill">
+    <h3 class="group" id="g-grill"><span class="petal petal--r" aria-hidden="true"></span>Da grigliare al tavolo</h3>
+    <div class="strip" role="group" aria-labelledby="g-grill">
     <ul class="grid grid--grill">
       <li class="card">
         <picture>
-          <source type="image/avif" srcset="/assets/img/galbi-420.avif 420w, /assets/img/galbi-640.avif 640w, /assets/img/galbi-840.avif 840w" sizes="(min-width: 1000px) 760px, 86vw">
-          <source type="image/webp" srcset="/assets/img/galbi-420.webp 420w, /assets/img/galbi-640.webp 640w, /assets/img/galbi-840.webp 840w" sizes="(min-width: 1000px) 760px, 86vw">
+          <source type="image/avif" srcset="/assets/img/galbi-420.avif 420w, /assets/img/galbi-640.avif 640w, /assets/img/galbi-840.avif 840w" sizes="(min-width: 1000px) 600px, 330px">
+          <source type="image/webp" srcset="/assets/img/galbi-420.webp 420w, /assets/img/galbi-640.webp 640w, /assets/img/galbi-840.webp 840w" sizes="(min-width: 1000px) 600px, 330px">
           <img src="/assets/img/galbi-840.webp" width="840" height="630" loading="lazy" decoding="async" alt="Costine di manzo marinate tagliate sottili, pronte per la griglia">
         </picture>
         <div class="card__b">
@@ -196,8 +215,8 @@
       </li>
       <li class="card">
         <picture>
-          <source type="image/avif" srcset="/assets/img/ribeye-420.avif 420w, /assets/img/ribeye-640.avif 640w, /assets/img/ribeye-840.avif 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
-          <source type="image/webp" srcset="/assets/img/ribeye-420.webp 420w, /assets/img/ribeye-640.webp 640w, /assets/img/ribeye-840.webp 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
+          <source type="image/avif" srcset="/assets/img/ribeye-420.avif 420w, /assets/img/ribeye-640.avif 640w, /assets/img/ribeye-840.avif 840w" sizes="(min-width: 1000px) 400px, 330px">
+          <source type="image/webp" srcset="/assets/img/ribeye-420.webp 420w, /assets/img/ribeye-640.webp 640w, /assets/img/ribeye-840.webp 840w" sizes="(min-width: 1000px) 400px, 330px">
           <img src="/assets/img/ribeye-840.webp" width="840" height="630" loading="lazy" decoding="async" alt="Entrecôte di manzo con marezzatura fitta, servita con lime">
         </picture>
         <div class="card__b">
@@ -207,8 +226,8 @@
       </li>
       <li class="card">
         <picture>
-          <source type="image/avif" srcset="/assets/img/cubetti-420.avif 420w, /assets/img/cubetti-640.avif 640w, /assets/img/cubetti-840.avif 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
-          <source type="image/webp" srcset="/assets/img/cubetti-420.webp 420w, /assets/img/cubetti-640.webp 640w, /assets/img/cubetti-840.webp 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
+          <source type="image/avif" srcset="/assets/img/cubetti-420.avif 420w, /assets/img/cubetti-640.avif 640w, /assets/img/cubetti-840.avif 840w" sizes="(min-width: 1000px) 400px, 330px">
+          <source type="image/webp" srcset="/assets/img/cubetti-420.webp 420w, /assets/img/cubetti-640.webp 640w, /assets/img/cubetti-840.webp 840w" sizes="(min-width: 1000px) 400px, 330px">
           <img src="/assets/img/cubetti-840.webp" width="840" height="630" loading="lazy" decoding="async" alt="Bocconcini di manzo crudo marinati con cipolla">
         </picture>
         <div class="card__b">
@@ -218,8 +237,8 @@
       </li>
       <li class="card">
         <picture>
-          <source type="image/avif" srcset="/assets/img/rose-420.avif 420w, /assets/img/rose-640.avif 640w, /assets/img/rose-840.avif 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
-          <source type="image/webp" srcset="/assets/img/rose-420.webp 420w, /assets/img/rose-640.webp 640w, /assets/img/rose-840.webp 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
+          <source type="image/avif" srcset="/assets/img/rose-420.avif 420w, /assets/img/rose-640.avif 640w, /assets/img/rose-840.avif 840w" sizes="(min-width: 1000px) 400px, 330px">
+          <source type="image/webp" srcset="/assets/img/rose-420.webp 420w, /assets/img/rose-640.webp 640w, /assets/img/rose-840.webp 840w" sizes="(min-width: 1000px) 400px, 330px">
           <img src="/assets/img/rose-840.webp" width="840" height="630" loading="lazy" decoding="async" alt="Due rose di fettine di manzo accanto a una rosa intagliata nella carota">
         </picture>
         <div class="card__b">
@@ -229,8 +248,8 @@
       </li>
       <li class="card">
         <picture>
-          <source type="image/avif" srcset="/assets/img/manzo-salsa-420.avif 420w, /assets/img/manzo-salsa-640.avif 640w, /assets/img/manzo-salsa-840.avif 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
-          <source type="image/webp" srcset="/assets/img/manzo-salsa-420.webp 420w, /assets/img/manzo-salsa-640.webp 640w, /assets/img/manzo-salsa-840.webp 840w" sizes="(min-width: 1000px) 380px, (min-width: 560px) 46vw, 86vw">
+          <source type="image/avif" srcset="/assets/img/manzo-salsa-420.avif 420w, /assets/img/manzo-salsa-640.avif 640w, /assets/img/manzo-salsa-840.avif 840w" sizes="(min-width: 1000px) 400px, 330px">
+          <source type="image/webp" srcset="/assets/img/manzo-salsa-420.webp 420w, /assets/img/manzo-salsa-640.webp 640w, /assets/img/manzo-salsa-840.webp 840w" sizes="(min-width: 1000px) 400px, 330px">
           <img src="/assets/img/manzo-salsa-840.webp" width="840" height="630" loading="lazy" decoding="async" alt="Tranci di manzo al naturale con lattuga e una ciotolina di salsa">
         </picture>
         <div class="card__b">
@@ -239,6 +258,9 @@
         </div>
       </li>
     </ul>
+    </div>
+    <div class="grill__bar" aria-hidden="true"><i></i></div>
+    </div>
 
     <h3 class="group"><span class="petal petal--b" aria-hidden="true"></span>Dalla cucina</h3>
     <ul class="grid grid--kitchen">
@@ -498,6 +520,7 @@
       </ul>
     </div>
   </div>
+  <p class="foot__big" aria-hidden="true">Jindalai</p>
   <div class="wrap foot__end">
     <p>© <span id="anno">2026</span> Jindalai Ristorante. Questo sito non usa cookie né strumenti di tracciamento.</p>
   </div>
@@ -508,6 +531,6 @@
   Prenota
 </a>
 
-<script src="/assets/js/main.js?v=1" defer></script>
+<script src="/assets/js/main.js?v=3" defer></script>
 </body>
 </html>

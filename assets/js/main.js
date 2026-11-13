@@ -75,6 +75,51 @@
     zone.forEach(function (z) { io.observe(z); });
   }
 
+  // Striscia dei tagli da griglia: su telefono e tablet si scorre di lato
+  var strip = document.querySelector('.strip');
+  var grill = document.querySelector('.grill');
+  var bar = document.querySelector('.grill__bar i');
+  if (strip && grill && window.matchMedia) {
+    var stretto = window.matchMedia('(max-width: 999px)');
+    var aggiornaBarra = function () {
+      var max = strip.scrollWidth - strip.clientWidth;
+      if (bar && max > 0) bar.style.transform = 'scaleX(' + (0.18 + 0.82 * Math.min(1, strip.scrollLeft / max)).toFixed(3) + ')';
+    };
+    var impostaStriscia = function () {
+      grill.classList.toggle('is-swipe', stretto.matches);
+      if (stretto.matches) strip.tabIndex = 0; // raggiungibile da tastiera quando si può scorrere
+      else { strip.removeAttribute('tabindex'); if (bar) bar.style.transform = ''; }
+    };
+    strip.addEventListener('scroll', function () { if (stretto.matches) aggiornaBarra(); }, { passive: true });
+    if (stretto.addEventListener) stretto.addEventListener('change', impostaStriscia); else stretto.addListener(impostaStriscia);
+    impostaStriscia();
+  }
+
+  // Animazioni: i file si scaricano solo a pagina pronta e a sipario d'apertura alzato,
+  // così non rallentano la comparsa della pagina. Vengono eseguiti nell'ordine qui sotto.
+  // Chi ha chiesto al sistema di ridurre i movimenti non li scarica affatto.
+  var ANIMAZIONI = [
+    '/assets/js/vendor/gsap.min.js?v=3.15.1',
+    '/assets/js/vendor/ScrollTrigger.min.js?v=3.15.1',
+    '/assets/js/vendor/lenis.min.js?v=1.3.27',
+    '/assets/js/motion.js?v=3',
+    '/assets/js/hero-lights.js?v=1'
+  ];
+  function avviaAnimazioni() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var trascorso = window.performance && performance.now ? performance.now() : 0;
+    window.setTimeout(function () {
+      ANIMAZIONI.forEach(function (src) {
+        var s = document.createElement('script');
+        s.src = src;
+        s.async = false;
+        document.head.appendChild(s);
+      });
+    }, Math.max(0, 1500 - trascorso));
+  }
+  if (document.readyState === 'complete') avviaAnimazioni();
+  else window.addEventListener('load', avviaAnimazioni);
+
   // Modulo di prenotazione -> messaggio WhatsApp
   var form = document.getElementById('form-prenota');
   if (!form) return;
