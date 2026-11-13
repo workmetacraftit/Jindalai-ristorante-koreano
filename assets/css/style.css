@@ -28,6 +28,10 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 main,main [id]{scroll-margin-top:calc(var(--top) + 16px)}
 [tabindex="-1"]:focus{outline:none}
 body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+/* "clip" trims the sideways overflow like "hidden" but does not turn the body into a scrolling box.
+   It matters when the phone navigation locks the page (html.nav-open below): with "hidden" the sticky
+   header would then stick to the body instead of the screen and jump to the top of the document. */
+@supports (overflow:clip){body{overflow-x:clip}}
 img,picture,svg{display:block;max-width:100%}
 img{height:auto}
 h1,h2,h3,h4,p,ul,ol,table,address,figure,blockquote{margin:0}
@@ -94,7 +98,7 @@ h2{font-size:clamp(1.9rem,1.2rem + 2.6vw,3rem)}
   .mnav__more{display:flex;flex-wrap:wrap;gap:.2rem 1.5rem}
   .mnav__more a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
   .top:has(.mnav[open]){background:var(--bg)}
-  html.nav-open{overflow:hidden}
+  @supports (overflow:clip){html.nav-open{overflow:hidden}} /* page behind the open panel stays still */
 }
 @media (max-width:859px) and (prefers-reduced-motion:no-preference){
   .mnav[open] .mnav__panel{animation:mnav-in .45s cubic-bezier(.2,.8,.2,1) both}
