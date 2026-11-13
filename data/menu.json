@@ -1,0 +1,262 @@
+{
+  "updated": "2026-11",
+  "currency": "EUR",
+  "allergens": {
+    "A": { "short": "Glutine", "long": "Cereali contenenti glutine e prodotti derivati" },
+    "B": { "short": "Crostacei", "long": "Crostacei e prodotti a base di crostacei" },
+    "C": { "short": "Uova", "long": "Uova e prodotti a base di uova" },
+    "D": { "short": "Pesce", "long": "Pesce e prodotti a base di pesce" },
+    "E": { "short": "Arachidi", "long": "Arachidi e prodotti a base di arachidi" },
+    "F": { "short": "Soia", "long": "Soia e prodotti a base di soia" },
+    "G": { "short": "Latte", "long": "Latte e prodotti a base di latte (incluso lattosio)" },
+    "H": { "short": "Frutta a guscio", "long": "Frutta a guscio" },
+    "I": { "short": "Sedano", "long": "Sedano e prodotti a base di sedano" },
+    "J": { "short": "Senape", "long": "Senape e prodotti a base di senape" },
+    "K": { "short": "Sesamo", "long": "Semi di sesamo e prodotti a base di semi di sesamo" },
+    "L": { "short": "Solfiti", "long": "Anidride solforosa e solfiti" },
+    "M": { "short": "Lupini", "long": "Lupini e prodotti a base di lupini" },
+    "N": { "short": "Molluschi", "long": "Molluschi e prodotti a base di molluschi" }
+  },
+  "groups": [
+    {
+      "id": "brace",
+      "title": "Alla brace",
+      "intro": "Gli spiedini sono quelli tipici di Yanbian, accanto ai tagli per la griglia.",
+      "sections": [
+        {
+          "id": "agnello", "title": "Agnello", "ko": "양", "zh": "羊肉类",
+          "allergens": ["E", "F", "K"], "frozen": true,
+          "items": [
+            { "name": "Costina d'agnello sardo", "ko": "사르데냐 양갈비 구이", "zh": "撒丁岛小羊排", "price": 10 },
+            { "name": "Costina d'agnello", "ko": "양갈비 구이", "price": 10 },
+            { "name": "Spiedini di rene d'agnello", "ko": "양신장 꼬치", "zh": "羊腰子", "price": 3 },
+            { "name": "Spiedini d'agnello sardo", "ko": "사르데냐 양꼬치", "zh": "撒丁岛小羊肉串", "price": 2.5 },
+            { "name": "Spiedini d'agnello", "ko": "양 꼬치", "zh": "羊肉串", "price": 1.5 }
+          ]
+        },
+        {
+          "id": "manzo", "title": "Manzo", "ko": "소", "zh": "牛肉类",
+          "allergens": ["E", "F", "K"], "frozen": true,
+          "items": [
+            { "name": "Costina di bovino", "ko": "소갈비", "zh": "烤牛排", "price": 18 },
+            { "name": "Spiedini di manzo", "ko": "소 꼬치", "zh": "牛肉串", "price": 1.5 },
+            { "name": "Spiedini di manzo BBQ", "ko": "불고기 소꼬치", "zh": "烧烤牛肉串", "price": 1.5 },
+            { "name": "Spiedini di manzo piccante", "ko": "매운 소꼬치 (마라)", "zh": "麻辣牛肉串", "price": 1.5, "spicy": true },
+            { "name": "Spiedini di legamento bovino", "ko": "소힘줄 꼬치", "zh": "牛板筋串", "price": 2 },
+            { "name": "Spiedini d'arteria del cuore", "ko": "소심장 동맥 꼬치", "zh": "牛心管串", "price": 2 },
+            { "name": "Spiedini di trippa", "ko": "소위 꼬치", "zh": "牛肚串", "price": 1.5 }
+          ]
+        },
+        {
+          "id": "suino", "title": "Suino", "ko": "돼지", "zh": "猪肉类",
+          "allergens": ["E", "F", "K"], "frozen": true,
+          "items": [
+            { "name": "Pancetta alla griglia", "ko": "삼겹살 구이 (1인분 / 2인분)", "zh": "烤五花肉（1人份 / 两人份）", "desc": "Con lattuga e salsa. Per 1 persona o per 2 persone.", "prices": [ { "label": "Per 1 persona", "price": 15 }, { "label": "Per 2 persone", "price": 25 } ] },
+            { "name": "Spiedini di sausage", "ko": "소시지 꼬치", "zh": "王中王香肠串", "price": 1 },
+            { "name": "Spiedini d'osso morbido", "ko": "오돌뼈 꼬치", "zh": "猪脆骨串", "price": 2 },
+            { "name": "Spiedini di cotenna", "ko": "껍데기 꼬치", "zh": "猪皮串", "price": 1 },
+            { "name": "Spiedini di fegato", "ko": "간 꼬치", "zh": "猪肝串", "price": 1.5 },
+            { "name": "Spiedini di milza", "ko": "비장 꼬치", "zh": "沙肝串", "price": 1.5 },
+            { "name": "Spiedini di rene", "ko": "신장 꼬치", "zh": "猪腰子串", "price": 1.5 },
+            { "name": "Spiedini di cuore", "ko": "심장 꼬치", "zh": "猪心脏串", "price": 1.5 }
+          ]
+        },
+        {
+          "id": "pollo", "title": "Pollo", "ko": "닭", "zh": "鸡肉类",
+          "allergens": ["E", "F", "K"], "frozen": true,
+          "items": [
+            { "name": "Spiedini d'ali di pollo", "ko": "닭날개 구이", "zh": "鸡翅", "price": 2.5, "spicy": true },
+            { "name": "Spiedini di pollo", "ko": "닭 꼬치", "zh": "鸡肉串", "price": 1.5 },
+            { "name": "Spiedini di ventriglio di pollo", "ko": "닭똥집 꼬치", "zh": "鸡胗串", "price": 1.5 },
+            { "name": "Spiedini di uova di quaglia", "ko": "메추리알 꼬치", "zh": "鹌鹑蛋", "price": 1.5 }
+          ]
+        },
+        {
+          "id": "pesce", "title": "Pesce", "ko": "해물", "zh": "海鲜类",
+          "allergens": ["B", "D", "E", "F", "K", "N"], "frozen": true,
+          "items": [
+            { "name": "Anguilla", "ko": "장어 구이", "zh": "烤鳗鱼（1条）", "price": 28 },
+            { "name": "Cappesante", "ko": "가리비 구이", "zh": "蒜蓉粉丝扇贝", "price": 4 },
+            { "name": "Spiedini di calamari", "ko": "오징어 꼬치", "zh": "鱿鱼串", "price": 1.5 },
+            { "name": "Spiedini di gamberoni", "ko": "새우 꼬치", "zh": "大虾串", "price": 2.5 },
+            { "name": "Spiedini di polpette di pesce", "ko": "어묵 꼬치", "zh": "鱼丸串", "price": 1.5 }
+          ]
+        },
+        {
+          "id": "verdura", "title": "Verdura", "ko": "야채", "zh": "蔬菜类",
+          "allergens": ["F"],
+          "items": [
+            { "name": "Melanzane alla griglia", "ko": "가지 구이", "zh": "蒜蓉锡纸茄子", "price": 4 },
+            { "name": "Funghi alla griglia (Pleurotus eryngii)", "ko": "새송이버섯 구이", "zh": "蒜蓉锡纸杏鲍菇", "price": 6 },
+            { "name": "Enoki alla griglia", "ko": "팽이버섯 구이", "zh": "蒜蓉锡纸金针菇", "price": 6 },
+            { "name": "Funghi champignon alla griglia", "ko": "버섯 구이", "zh": "烤白蘑菇", "price": 5 },
+            { "name": "Zucchine alla griglia", "ko": "애호박 구이", "zh": "烤小南瓜（角瓜）", "price": 4 },
+            { "name": "Patata alla griglia", "ko": "감자 구이", "zh": "烤土豆", "price": 4 },
+            { "name": "Patata dolce alla griglia", "ko": "고구마 구이", "zh": "烤地瓜", "price": 4 },
+            { "name": "Cavolfiore alla griglia", "ko": "브로콜리 구이", "zh": "烤花菜", "price": 4 },
+            { "name": "Erba cipolla alla griglia", "ko": "부추 구이", "zh": "烤韭菜", "price": 2 },
+            { "name": "Spiedini d'asparagi", "ko": "아스파라거스 꼬치", "zh": "芦笋串", "price": 2 },
+            { "name": "Spiedini di pannocchia", "ko": "옥수수 꼬치", "zh": "玉米串", "price": 2 },
+            { "name": "Spiedini di pane", "ko": "빵 꼬치", "zh": "馒头串", "price": 1 },
+            { "name": "Spiedini d'aglio", "ko": "마늘 꼬치", "zh": "大蒜串", "price": 1 },
+            { "name": "Spiedini di piante d'aglio", "ko": "마늘쫑 꼬치", "zh": "蒜苗串", "price": 1 }
+          ]
+        },
+        {
+          "id": "spezie", "title": "Per condire", "nav": false,
+          "items": [
+            { "name": "Spezie per spiedini", "ko": "꼬치 양념", "zh": "串料", "price": 1 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cucina",
+      "title": "Dalla cucina",
+      "intro": "I numeri sono gli stessi del menu che trovi al tavolo.",
+      "sections": [
+        {
+          "id": "frittelle", "title": "Frittelle e ravioli", "ko": "전", "zh": "饼类",
+          "allergens": ["A"],
+          "items": [
+            { "n": 1, "name": "Chapssal Jeon", "ko": "찹쌀전", "zh": "糯米饼", "desc": "Frittella di riso glutinoso", "price": 8 },
+            { "n": 2, "name": "Haemul Jeon", "ko": "해물파전", "zh": "海鲜葱饼", "desc": "Frittella di frutti di mare misti e cipollotti", "price": 9 },
+            { "n": 3, "name": "Kimchi Jeon", "ko": "김치전", "zh": "泡菜饼", "desc": "Frittella di kimchi", "price": 8 },
+            { "n": 4, "name": "Gamja Jeon", "ko": "감자전", "zh": "土豆饼", "desc": "Frittella di patata", "price": 8 },
+            { "n": 5, "name": "Gun mandu", "ko": "군 만두", "zh": "韩式煎饺", "desc": "Ravioli alla griglia di verdure e carne, 4 pezzi", "price": 6 }
+          ]
+        },
+        {
+          "id": "insalate", "title": "Insalate", "ko": "무침", "zh": "凉菜",
+          "allergens": ["F", "K"],
+          "items": [
+            { "n": 6, "name": "Kimchi", "ko": "김치", "zh": "辣白菜", "desc": "Cavolo cinese marinato e fermentato con spezie e peperoncino", "price": 6, "allergens": ["D"] },
+            { "n": 7, "name": "Insalata di tofu secco", "ko": "건두부 무침", "zh": "凉拌干豆腐", "price": 7, "spicy": true },
+            { "n": 8, "name": "Insalata di manzo con cetriolo", "ko": "소고기 오이 무침", "zh": "黄瓜拌牛肉", "price": 10, "spicy": true },
+            { "n": 9, "name": "Golbaengi muccim", "ko": "골뱅이 무침", "zh": "韩式拌螺", "desc": "Lumache, cetriolo, spaghetti di grano, salsa piccante", "price": 14, "spicy": true },
+            { "n": 10, "name": "Insalata di manzo con coriandolo", "ko": "소고기 무침", "zh": "拌牛腱子肉", "price": 10, "spicy": true },
+            { "n": 11, "name": "Insalata di legamento bovino", "ko": "소힘줄 무침", "zh": "拌牛板筋", "price": 10, "spicy": true },
+            { "n": 12, "name": "Insalata di radice", "ko": "도라지 무침", "zh": "凉拌桔梗", "price": 10, "spicy": true },
+            { "n": 13, "name": "Insalata di seppia con cetriolo", "ko": "꼴뚜기 무침", "zh": "拌墨斗", "price": 12, "spicy": true, "frozen": true },
+            { "n": 14, "name": "Insalata di patata", "ko": "감자 무침", "zh": "凉拌土豆丝", "price": 7, "spicy": true, "allergens": ["E"] }
+          ]
+        },
+        {
+          "id": "zuppe", "title": "Zuppe", "ko": "찌개", "zh": "汤类",
+          "allergens": ["F"],
+          "items": [
+            { "n": 16, "name": "Duengiang Zighe", "ko": "된장찌개", "zh": "大酱汤", "desc": "Carne di maiale, tofu, patate, funghi, cavolo cinese, salsa di soia. Con riso bianco.", "price": 10 },
+            { "n": 17, "name": "Dong tae Zighe", "ko": "동태찌개", "desc": "Merluzzo, vongole, rapa, tofu, salsa piccante. Con riso bianco.", "price": 12, "spicy": true, "frozen": true, "allergens": ["B"] },
+            { "n": 18, "name": "Haemul Sundubu Zighe", "ko": "해물 순두부찌개", "zh": "海鲜嫩豆腐汤", "desc": "Tofu morbido con frutti di mare misti. Con riso bianco.", "price": 10, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
+            { "n": 19, "name": "Youkke Giang", "ko": "육개장", "zh": "辣牛肉汤", "desc": "Carne di manzo, spaghetti di fecola di patata, funghi, felce, uova. Con riso bianco.", "price": 12, "spicy": true },
+            { "n": 20, "name": "Kimchi Zighe", "ko": "참치 김치찌개", "desc": "Kimchi, tonno, tofu. Con riso bianco.", "price": 12, "spicy": true },
+            { "n": 21, "name": "Kimchi Zighe", "ko": "삼겹살 김치찌개", "zh": "五花肉泡菜汤", "desc": "Kimchi, carne di maiale, tofu. Con riso bianco.", "price": 10, "spicy": true },
+            { "n": 22, "name": "Bude Zighe", "ko": "부대찌개", "zh": "部队锅（2人份）", "desc": "Kimchi, ravioli, gnocchi di riso, wurstel, zucchine, carote, tofu, salsa piccante. Per 2 persone.", "price": 25, "spicy": true }
+          ]
+        },
+        {
+          "id": "riso", "title": "Riso", "ko": "밥", "zh": "饭类",
+          "allergens": ["K", "F"],
+          "items": [
+            { "n": 24, "name": "Bibimbap", "ko": "돌솥 비빔밥", "zh": "石锅拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, manzo saltato in salsa BBQ, uova", "price": 10 },
+            { "n": 25, "name": "Bibimbap al BBQ", "ko": "불고기 비빔밥", "zh": "烧烤肉拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, doppio manzo saltato in salsa BBQ, uova", "price": 12 },
+            { "n": 26, "name": "Bibimbap vegetariano", "ko": "야채 비빔밥", "zh": "蔬菜拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 10 },
+            { "n": 27, "name": "Bibimbap al tonno", "ko": "참치 비빔밥", "zh": "金枪鱼拌饭", "desc": "Riso, tonno, lattuga, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 12 },
+            { "n": 28, "name": "Kimchi bokkum bap", "ko": "김치 볶음밥", "zh": "辣白菜炒饭", "desc": "Riso saltato con kimchi, uova", "price": 12 },
+            { "n": 29, "name": "Kimbap al BBQ", "ko": "불고기 김밥", "zh": "烧烤肉紫菜卷", "desc": "Alghe, riso, manzo saltato in salsa bulgoghi, wurstel, rapa agrodolce, spinaci, carota, cetriolo, uova", "price": 10 },
+            { "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
+            { "n": 31, "name": "Kimbap all'insalata", "ko": "샐러드 김밥", "zh": "沙拉紫菜卷", "desc": "Alghe, riso, cavolo, wurstel, rapa agrodolce, cetriolo, uova, maionese", "price": 9 },
+            { "n": 32, "name": "O ging o deobbap", "ko": "오징어 덮밥", "zh": "辣炒鱿鱼盖饭", "desc": "Riso coperto con calamari saltati in salsa piccante", "price": 12, "spicy": true },
+            { "name": "Riso in bianco", "ko": "밥", "zh": "白饭", "price": 1.5 }
+          ]
+        },
+        {
+          "id": "spaghetti", "title": "Spaghetti", "ko": "면", "zh": "面类",
+          "allergens": ["A", "F"],
+          "items": [
+            { "n": 33, "name": "Jindalai Naengmyeon", "ko": "연변 냉면", "zh": "延边冷面", "desc": "Spaghetti freddi in brodo agrodolce", "price": 13 },
+            { "n": 34, "name": "Jindalai bibim Naengmyeon", "ko": "연변 비빔냉면", "desc": "Spaghetti in salsa", "price": 13, "spicy": true },
+            { "n": 35, "name": "Haemul Zamppong", "ko": "해물 짬뽕", "zh": "韩式辣海鲜汤面", "desc": "Spaghetti in brodo piccante con frutti di mare misti", "price": 12, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
+            { "n": 36, "name": "Japchae", "ko": "잡채 볶음", "zh": "韩式炒杂菜", "desc": "Spaghetti di fecola di patata saltati con manzo e verdure", "price": 10 },
+            { "n": 37, "name": "Zajangmyeon", "ko": "짜장면", "zh": "韩式炸酱面", "desc": "Spaghetti in salsa di soia nera fermentata con pancetta e verdure", "price": 10 },
+            { "n": 38, "name": "Sin lamyeon", "ko": "신라면", "zh": "辛拉面", "desc": "Ramen in brodo piccante, tofu di pesce e uova", "price": 6, "spicy": true }
+          ]
+        },
+        {
+          "id": "gnocchi", "title": "Gnocchi di riso", "ko": "떡볶이", "zh": "年糕类",
+          "allergens": ["F"],
+          "items": [
+            { "n": 39, "name": "Haemul Tteokbokki", "ko": "해물 떡볶이", "zh": "海鲜辣年糕", "desc": "Gnocchi di riso con frutti di mare misti in salsa piccante", "price": 10, "spicy": true, "allergens": ["B", "N"] },
+            { "n": 40, "name": "Olio aglio Tteokbokki", "ko": "올리오 알리오 떡볶이", "zh": "蒜香年糕", "desc": "Gnocchi di riso all'olio e aglio", "price": 10, "allergens": ["B"] },
+            { "n": 41, "name": "Cheese Tteokbokki", "ko": "치즈 떡볶이", "zh": "芝士年糕", "desc": "Gnocchi di riso in salsa piccante coperti con mozzarella", "price": 10, "spicy": true, "allergens": ["G"] },
+            { "n": 42, "name": "Gungjung Tteokbokki", "ko": "궁중 떡볶이", "zh": "宫廷年糕", "desc": "Gnocchi di riso in salsa di soia, verdure e manzo, tofu di pesce", "price": 10 }
+          ]
+        },
+        {
+          "id": "caldi", "title": "Piatti caldi", "ko": "요리", "zh": "热菜",
+          "allergens": ["F", "K"],
+          "items": [
+            { "n": 43, "name": "Chicken", "ko": "치킨", "zh": "韩式炸鸡", "desc": "Pollo fritto, salsa piccante a parte", "price": 13 },
+            { "n": 44, "name": "Tangsuyuk", "ko": "납작 탕수육", "zh": "锅包肉", "desc": "Maiale fritto in salsa agrodolce", "price": 13 },
+            { "n": 45, "name": "Saeu Tuighim", "ko": "크림소스 새우튀김", "zh": "秘制炸虾", "desc": "Gamberoni fritti in salsa agrodolce", "price": 13, "allergens": ["B"] },
+            { "n": 46, "name": "Haemul nurongji", "ko": "해물누룽지", "zh": "海鲜锅巴", "desc": "Riso arrosto con frutti di mare misti", "price": 12, "allergens": ["B", "N"] },
+            { "n": 47, "name": "Sgombro alla griglia", "ko": "고등어 구이", "zh": "煎鲭鱼", "price": 10, "frozen": true, "allergens": ["D"] },
+            { "n": 48, "name": "Cheese Buldak", "ko": "치즈 불닭", "zh": "芝士辣鸡", "desc": "Pollo saltato in salsa piccante coperto con mozzarella", "price": 12, "spicy": true },
+            { "n": 49, "name": "Bulgoghi", "ko": "불고기", "zh": "烧烤汁牛肉", "desc": "Noce di manzo marinata in salsa bulgoghi e saltata con verdure", "price": 12 },
+            { "n": 50, "name": "Dubu kimchi", "ko": "두부 김치", "zh": "豆腐泡菜", "desc": "Tofu al vapore con kimchi saltato", "price": 10 },
+            { "n": 51, "name": "Dakbal", "ko": "매운 닭발", "zh": "辣鸡爪", "desc": "Zampe di pollo marinate in salsa piccante, al vapore", "price": 10, "spicy": true },
+            { "n": 52, "name": "O ging o bokkum", "ko": "오징어 볶음", "zh": "韩式辣炒鱿鱼", "desc": "Calamari saltati in salsa piccante con verdure", "price": 12, "spicy": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bere",
+      "title": "Da bere",
+      "sections": [
+        {
+          "id": "bibite", "title": "Acqua, bibite e succhi",
+          "items": [
+            { "name": "Acqua naturale 450 ml", "ko": "물 작은병", "zh": "小瓶水", "price": 1.5 },
+            { "name": "Acqua naturale 750 ml", "ko": "물 큰병", "zh": "大瓶水", "price": 2.5 },
+            { "name": "Acqua S.Pellegrino 45 cl", "ko": "까스물 작은병", "zh": "小瓶汽水", "price": 1.5 },
+            { "name": "Acqua S.Pellegrino 75 cl", "ko": "까스물 큰병", "zh": "大瓶汽水", "price": 2.5 },
+            { "name": "Coca-Cola, Fanta o Sprite", "ko": "콜라 / 환타 / 사이다", "zh": "可乐 / 芬达 / 雪碧", "price": 3 },
+            { "name": "Tè al limone o alla pesca", "ko": "레몬 티 / 복숭아 티", "zh": "柠檬茶 / 桃茶", "price": 2.5 },
+            { "name": "Tè cinese", "ko": "중국 티", "zh": "王老吉", "price": 2.5 },
+            { "name": "Succo d'uva 238 ml", "ko": "포도 봉봉", "zh": "葡萄汁", "price": 3.5 },
+            { "name": "Succo di aloe 500 ml", "ko": "알로에", "zh": "芦荟汁", "price": 4 },
+            { "name": "Succo di riso 500 ml", "ko": "아침햇살", "zh": "米汁", "price": 5 }
+          ]
+        },
+        {
+          "id": "birre", "title": "Birre",
+          "items": [
+            { "name": "Moretti o Heineken 66 cl", "ko": "맥주 모레띠 / 하이네켄", "zh": "啤酒 老人头 / 喜力", "price": 3 },
+            { "name": "Birra cinese Qingdao 66 cl", "ko": "칭도우 맥주", "zh": "青岛啤酒", "price": 4 },
+            { "name": "Birra coreana Kloud 500 ml", "ko": "클라우드 맥주", "zh": "韩国啤酒 Kloud", "price": 5.5 },
+            { "name": "Birra coreana Cass 500 ml", "ko": "카스 맥주", "zh": "韩国啤酒 Cass", "price": 5.5 }
+          ]
+        },
+        {
+          "id": "soju", "title": "Soju e liquori",
+          "items": [
+            { "name": "Soju fresh 350 ml 17,5% o Soju classico 350 ml 20,1%", "ko": "참이슬 소주, 처음처럼 소주", "zh": "烧酒", "price": 10 },
+            { "name": "Soju gusto frutta 350 ml 12%", "ko": "과일맛 소주", "zh": "果味烧酒", "price": 10 },
+            { "name": "Soju cinese 100 ml 40%", "ko": "중국소주", "zh": "江小白", "price": 10 },
+            { "name": "Vino di riso 75 cl 6%", "ko": "막걸리", "zh": "米酒", "price": 10 },
+            { "name": "Grappa di prugna 35 cl 14%", "ko": "매화수", "zh": "梅花酒", "price": 12 },
+            { "name": "Amaro", "price": 3 }
+          ]
+        },
+        {
+          "id": "te", "title": "Tè e caffè",
+          "items": [
+            { "name": "Tè di grano", "ko": "보리차", "zh": "大麦茶", "price": 5 },
+            { "name": "Caffè", "price": 1.5 }
+          ]
+        }
+      ]
+    }
+  ]
+}

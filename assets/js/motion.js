@@ -128,7 +128,11 @@
     // Con mouse e trackpad lo scroll diventa morbido; sul touch resta quello nativo del telefono.
     // Lo spazio per l'intestazione fissa viene da scroll-margin-top nel CSS.
     if (window.Lenis) {
-      lenis = new window.Lenis({ anchors: true, lerp: 0.12 });
+      lenis = new window.Lenis({
+        anchors: true, lerp: 0.12,
+        // a navigazione aperta (telefono) la pagina sotto resta ferma: Lenis lascia fare al browser
+        prevent: function () { return document.documentElement.classList.contains('nav-open'); }
+      });
       lenis.on('scroll', ScrollTrigger.update);
       gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
       gsap.ticker.lagSmoothing(0);
@@ -136,15 +140,17 @@
 
     gsap.to('.progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: 0.3 } });
 
-    // La foto scorre più lenta del testo
-    gsap.to('.hero__shift', {
-      yPercent: 12, ease: 'none',
-      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
-    });
-    gsap.to('.hero__in', {
-      y: -60, opacity: 0.12, ease: 'none',
-      scrollTrigger: { trigger: '.hero', start: '35% top', end: 'bottom top', scrub: true }
-    });
+    // Home: la foto dell'hero scorre più lenta del testo
+    if ($('.hero')) {
+      gsap.to('.hero__shift', {
+        yPercent: 12, ease: 'none',
+        scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+      });
+      gsap.to('.hero__in', {
+        y: -60, opacity: 0.12, ease: 'none',
+        scrollTrigger: { trigger: '.hero', start: '35% top', end: 'bottom top', scrub: true }
+      });
+    }
   });
 
   // 2. Introduzione
@@ -205,7 +211,7 @@
     }
 
     // Le parole dei titoli salgono una dopo l'altra
-    soloSotto($$('main .sec h2:not(.statement)')).forEach(function (h) {
+    soloSotto($$('main .sec h2:not(.statement), main .mgroup__head h2, main .cta h2')).forEach(function (h) {
       var parole = dividi(h);
       gsap.set(parole, { yPercent: 115 });
       osserva(h, { mostra: function () { gsap.to(parole, { yPercent: 0, stagger: 0.05, duration: 0.9 }); } });
@@ -279,7 +285,45 @@
     entra('.grid--kitchen .card', { y: 48, stagger: 0.09, duration: 0.9 });
   });
 
-  // 5. Prenotazione, orari, domande, scritta finale
+  // 5. Home, "Le nostre radici": i petali girano con lo scroll e la linea del tempo si accende
+  passi.push(function () {
+    var radici = $('.radici');
+    if (!radici) return;
+    entra('.radici .kicker, .radici__txt > p, .radici__txt > .btn');
+
+    var fiore = $('.azalea', radici);
+    if (fiore) {
+      gsap.fromTo(fiore, { rotation: -50, scale: 0.75 }, {
+        rotation: 40, scale: 1, ease: 'none',
+        scrollTrigger: { trigger: radici, start: 'top bottom', end: 'bottom top', scrub: 0.6 }
+      });
+    }
+
+    var linea = $('.tl', radici);
+    if (linea) {
+      // La linea dorata segue lo scroll (variabile --tl, letta dal CSS) e ogni data accende la sua lampadina
+      gsap.fromTo(linea, { '--tl': 0 }, {
+        '--tl': 1, ease: 'none',
+        scrollTrigger: { trigger: linea, start: 'top 72%', end: 'bottom 62%', scrub: 0.4 }
+      });
+      $$('.tl__i', linea).forEach(function (li) {
+        ScrollTrigger.create({
+          trigger: li, start: 'top 72%',
+          onEnter: function () { li.classList.add('is-on'); },
+          onLeaveBack: function () { li.classList.remove('is-on'); }
+        });
+      });
+      entra('.tl__i', { y: 30, stagger: 0.1 });
+    }
+  });
+
+  // 6. Pagine interne: le voci del menu e i paragrafi della storia entrano mentre si scorre
+  passi.push(function () {
+    entra('.mgroup__head p, .msec__head, .mi, .alg, .cta__in > *', { y: 16, stagger: 0.03, duration: 0.5 });
+    entra('.story__toc, .story__body > *', { y: 22 });
+  });
+
+  // 7. Prenotazione, orari, domande, scritta finale
   passi.push(function () {
     entra('.prenota .kicker, .prenota__txt > p, .direct li');
     entra('.form', { y: 60, duration: 1.1 });

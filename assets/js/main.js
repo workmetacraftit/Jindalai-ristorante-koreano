@@ -95,6 +95,73 @@
     impostaStriscia();
   }
 
+  var riduci = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  // Navigazione su telefono: è un <details>, quindi si apre anche senza questo script.
+  // Qui si aggiungono le rifiniture: chiusura con Esc, al tocco su un link e quando il focus esce.
+  var mnav = document.querySelector('.mnav');
+  if (mnav) {
+    var pulsante = mnav.querySelector('summary');
+    var chiudiNav = function (riportaFocus) {
+      if (!mnav.open) return;
+      mnav.open = false;
+      document.documentElement.classList.remove('nav-open');
+      if (riportaFocus && pulsante) pulsante.focus();
+    };
+    mnav.addEventListener('toggle', function () { document.documentElement.classList.toggle('nav-open', mnav.open); });
+    mnav.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('.mnav__panel a')) chiudiNav(false); });
+    mnav.addEventListener('focusout', function (e) { if (e.relatedTarget && !mnav.contains(e.relatedTarget)) chiudiNav(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') chiudiNav(true); });
+    if (window.matchMedia) {
+      var largo = window.matchMedia('(min-width: 860px)');
+      var seLargo = function () { if (largo.matches) chiudiNav(false); };
+      if (largo.addEventListener) largo.addEventListener('change', seLargo); else largo.addListener(seLargo);
+    }
+  }
+
+  // Pagina del menu: nella barra delle sezioni resta evidenziata quella che si sta leggendo
+  var cats = document.querySelector('.cats');
+  if (cats && window.requestAnimationFrame) {
+    var barra = cats.querySelector('.cats__in');
+    var tappe = []; // le sezioni che hanno una voce nella barra, nell'ordine della pagina
+    Array.prototype.forEach.call(cats.querySelectorAll('a[href^="#"]'), function (a) {
+      var sez = document.getElementById(a.getAttribute('href').slice(1));
+      if (sez) tappe.push({ sez: sez, voce: a });
+    });
+    var attuale = null;
+    var segna = function (tappa) {
+      if (tappa === attuale) return;
+      if (attuale) attuale.voce.removeAttribute('aria-current');
+      attuale = tappa;
+      var x = 0;
+      if (tappa) {
+        tappa.voce.setAttribute('aria-current', 'location');
+        x = tappa.voce.offsetLeft - (barra.clientWidth - tappa.voce.offsetWidth) / 2;
+      }
+      if (barra.scrollWidth > barra.clientWidth + 1) { // su telefono la barra scorre di lato: la voce attiva resta al centro
+        if (barra.scrollTo) barra.scrollTo({ left: x, behavior: riduci ? 'auto' : 'smooth' }); else barra.scrollLeft = x;
+      }
+    };
+    // "In lettura" è l'ultima sezione il cui inizio ha superato una linea a un terzo dello schermo.
+    // Prima della prima sezione e dopo la fine dell'ultima non è evidenziato nulla.
+    var inAttesa = false;
+    var trovaAttuale = function () {
+      inAttesa = false;
+      var linea = window.innerHeight * 0.3;
+      var trovata = null;
+      for (var i = 0; i < tappe.length; i++) {
+        if (tappe[i].sez.getBoundingClientRect().top > linea) break;
+        trovata = tappe[i];
+      }
+      if (trovata === tappe[tappe.length - 1] && trovata.sez.getBoundingClientRect().bottom < linea) trovata = null;
+      segna(trovata);
+    };
+    var chiedi = function () { if (!inAttesa) { inAttesa = true; window.requestAnimationFrame(trovaAttuale); } };
+    window.addEventListener('scroll', chiedi, { passive: true });
+    window.addEventListener('resize', chiedi);
+    chiedi();
+  }
+
   // Animazioni: i file si scaricano solo a pagina pronta e a sipario d'apertura alzato,
   // così non rallentano la comparsa della pagina. Vengono eseguiti nell'ordine qui sotto.
   // Chi ha chiesto al sistema di ridurre i movimenti non li scarica affatto.
@@ -102,11 +169,15 @@
     '/assets/js/vendor/gsap.min.js?v=3.15.1',
     '/assets/js/vendor/ScrollTrigger.min.js?v=3.15.1',
     '/assets/js/vendor/lenis.min.js?v=1.3.27',
-    '/assets/js/motion.js?v=3',
-    '/assets/js/hero-lights.js?v=1'
+    '/assets/js/motion.js?v=4'
   ];
+  if (document.querySelector('.hero__spark')) ANIMAZIONI.push('/assets/js/hero-lights.js?v=1'); // le luci della facciata ci sono solo in home
   function avviaAnimazioni() {
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (riduci) return;
+    // Il sipario c'è solo in home, e solo quando non si arriva già puntati su una sezione
+    var sipario = document.querySelector('.ov');
+    var stile = sipario && window.getComputedStyle(sipario);
+    var attesa = stile && stile.display !== 'none' && stile.visibility !== 'hidden' ? 1500 : 500;
     var trascorso = window.performance && performance.now ? performance.now() : 0;
     window.setTimeout(function () {
       ANIMAZIONI.forEach(function (src) {
@@ -115,7 +186,7 @@
         s.async = false;
         document.head.appendChild(s);
       });
-    }, Math.max(0, 1500 - trascorso));
+    }, Math.max(0, attesa - trascorso));
   }
   if (document.readyState === 'complete') avviaAnimazioni();
   else window.addEventListener('load', avviaAnimazioni);
