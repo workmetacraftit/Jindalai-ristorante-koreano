@@ -122,19 +122,19 @@
           "items": [
             { "photo": "chapssal-jeon", "n": 1, "name": "Chapssal Jeon", "ko": "찹쌀전", "zh": "糯米饼", "desc": "Frittella di riso glutinoso", "price": 8 },
             { "photo": "haemul-jeon", "n": 2, "name": "Haemul Jeon", "ko": "해물파전", "zh": "海鲜葱饼", "desc": "Frittella di frutti di mare misti e cipollotti", "price": 9 },
-            { "n": 3, "name": "Kimchi Jeon", "ko": "김치전", "zh": "泡菜饼", "desc": "Frittella di kimchi", "price": 8 },
-            { "n": 4, "name": "Gamja Jeon", "ko": "감자전", "zh": "土豆饼", "desc": "Frittella di patata", "price": 8 },
-            { "n": 5, "name": "Gun mandu", "ko": "군 만두", "zh": "韩式煎饺", "desc": "Ravioli alla griglia di verdure e carne, 4 pezzi", "price": 6 }
+            { "photo": "kimchi-jeon", "n": 3, "name": "Kimchi Jeon", "ko": "김치전", "zh": "泡菜饼", "desc": "Frittella di kimchi", "price": 8 },
+            { "photo": "gamja-jeon", "n": 4, "name": "Gamja Jeon", "ko": "감자전", "zh": "土豆饼", "desc": "Frittella di patata", "price": 8 },
+            { "photo": "gun-mandu", "n": 5, "name": "Gun mandu", "ko": "군 만두", "zh": "韩式煎饺", "desc": "Ravioli alla griglia di verdure e carne, 4 pezzi", "price": 6 }
           ]
         },
         {
           "id": "insalate", "title": "Insalate", "ko": "무침", "zh": "凉菜",
           "allergens": ["F", "K"],
           "items": [
-            { "n": 6, "name": "Kimchi", "ko": "김치", "zh": "辣白菜", "desc": "Cavolo cinese marinato e fermentato con spezie e peperoncino", "price": 6, "allergens": ["D"] },
+            { "photo": "kimchi", "n": 6, "name": "Kimchi", "ko": "김치", "zh": "辣白菜", "desc": "Cavolo cinese marinato e fermentato con spezie e peperoncino", "price": 6, "allergens": ["D"] },
             { "n": 7, "name": "Insalata di tofu secco", "ko": "건두부 무침", "zh": "凉拌干豆腐", "price": 7, "spicy": true },
             { "n": 8, "name": "Insalata di manzo con cetriolo", "ko": "소고기 오이 무침", "zh": "黄瓜拌牛肉", "price": 10, "spicy": true },
-            { "n": 9, "name": "Golbaengi muccim", "ko": "골뱅이 무침", "zh": "韩式拌螺", "desc": "Lumache, cetriolo, spaghetti di grano, salsa piccante", "price": 14, "spicy": true },
+            { "photo": "golbaengi-muccim", "n": 9, "name": "Golbaengi muccim", "ko": "골뱅이 무침", "zh": "韩式拌螺", "desc": "Lumache, cetriolo, spaghetti di grano, salsa piccante", "price": 14, "spicy": true },
             { "n": 10, "name": "Insalata di manzo con coriandolo", "ko": "소고기 무침", "zh": "拌牛腱子肉", "price": 10, "spicy": true },
             { "n": 11, "name": "Insalata di legamento bovino", "ko": "소힘줄 무침", "zh": "拌牛板筋", "price": 10, "spicy": true },
             { "n": 12, "name": "Insalata di radice", "ko": "도라지 무침", "zh": "凉拌桔梗", "price": 10, "spicy": true },
@@ -146,13 +146,13 @@
           "id": "zuppe", "title": "Zuppe", "ko": "찌개", "zh": "汤类",
           "allergens": ["F"],
           "items": [
-            { "n": 16, "name": "Duengiang Zighe", "ko": "된장찌개", "zh": "大酱汤", "desc": "Carne di maiale, tofu, patate, funghi, cavolo cinese, salsa di soia. Con riso bianco.", "price": 10 },
+            { "photo": "duengiang-zighe", "n": 16, "name": "Duengiang Zighe", "ko": "된장찌개", "zh": "大酱汤", "desc": "Carne di maiale, tofu, patate, funghi, cavolo cinese, salsa di soia. Con riso bianco.", "price": 10 },
             { "n": 17, "name": "Dong tae Zighe", "ko": "동태찌개", "desc": "Merluzzo, vongole, rapa, tofu, salsa piccante. Con riso bianco.", "price": 12, "spicy": true, "frozen": true, "allergens": ["B"] },
-            { "n": 18, "name": "Haemul Sundubu Zighe", "ko": "해물 순두부찌개", "zh": "海鲜嫩豆腐汤", "desc": "Tofu morbido con frutti di mare misti. Con riso bianco.", "price": 10, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
-            { "n": 19, "name": "Youkke Giang", "ko": "육개장", "zh": "辣牛肉汤", "desc": "Carne di manzo, spaghetti di fecola di patata, funghi, felce, uova. Con riso bianco.", "price": 12, "spicy": true },
-            { "n": 20, "name": "Kimchi Zighe", "ko": "참치 김치찌개", "desc": "Kimchi, tonno, tofu. Con riso bianco.", "price": 12, "spicy": true },
-            { "n": 21, "name": "Kimchi Zighe", "ko": "삼겹살 김치찌개", "zh": "五花肉泡菜汤", "desc": "Kimchi, carne di maiale, tofu. Con riso bianco.", "price": 10, "spicy": true },
-            { "n": 22, "name": "Bude Zighe", "ko": "부대찌개", "zh": "部队锅（2人份）", "desc": "Kimchi, ravioli, gnocchi di riso, wurstel, zucchine, carote, tofu, salsa piccante. Per 2 persone.", "price": 25, "spicy": true }
+            { "photo": "sundubu-zighe", "n": 18, "name": "Haemul Sundubu Zighe", "ko": "해물 순두부찌개", "zh": "海鲜嫩豆腐汤", "desc": "Tofu morbido con frutti di mare misti. Con riso bianco.", "price": 10, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
+            { "photo": "youkke-giang", "n": 19, "name": "Youkke Giang", "ko": "육개장", "zh": "辣牛肉汤", "desc": "Carne di manzo, spaghetti di fecola di patata, funghi, felce, uova. Con riso bianco.", "price": 12, "spicy": true },
+            { "photo": "kimchi-zighe-tonno", "n": 20, "name": "Kimchi Zighe", "ko": "참치 김치찌개", "desc": "Kimchi, tonno, tofu. Con riso bianco.", "price": 12, "spicy": true },
+            { "photo": "kimchi-zighe-maiale", "n": 21, "name": "Kimchi Zighe", "ko": "삼겹살 김치찌개", "zh": "五花肉泡菜汤", "desc": "Kimchi, carne di maiale, tofu. Con riso bianco.", "price": 10, "spicy": true },
+            { "photo": "bude-zighe", "n": 22, "name": "Bude Zighe", "ko": "부대찌개", "zh": "部队锅（2人份）", "desc": "Kimchi, ravioli, gnocchi di riso, wurstel, zucchine, carote, tofu, salsa piccante. Per 2 persone.", "price": 25, "spicy": true }
           ]
         },
         {
@@ -160,13 +160,13 @@
           "allergens": ["K", "F"],
           "items": [
             { "photo": "bibimbap", "n": 24, "name": "Bibimbap", "ko": "돌솥 비빔밥", "zh": "石锅拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, manzo saltato in salsa BBQ, uova", "price": 10 },
-            { "n": 25, "name": "Bibimbap al BBQ", "ko": "불고기 비빔밥", "zh": "烧烤肉拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, doppio manzo saltato in salsa BBQ, uova", "price": 12 },
-            { "n": 26, "name": "Bibimbap vegetariano", "ko": "야채 비빔밥", "zh": "蔬菜拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 10 },
+            { "photo": "bibimbap-bbq", "n": 25, "name": "Bibimbap al BBQ", "ko": "불고기 비빔밥", "zh": "烧烤肉拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, doppio manzo saltato in salsa BBQ, uova", "price": 12 },
+            { "photo": "bibimbap-vegetariano", "n": 26, "name": "Bibimbap vegetariano", "ko": "야채 비빔밥", "zh": "蔬菜拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 10 },
             { "n": 27, "name": "Bibimbap al tonno", "ko": "참치 비빔밥", "zh": "金枪鱼拌饭", "desc": "Riso, tonno, lattuga, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 12 },
             { "photo": "kimchi-bokkum-bap", "n": 28, "name": "Kimchi bokkum bap", "ko": "김치 볶음밥", "zh": "辣白菜炒饭", "desc": "Riso saltato con kimchi, uova", "price": 12 },
-            { "n": 29, "name": "Kimbap al BBQ", "ko": "불고기 김밥", "zh": "烧烤肉紫菜卷", "desc": "Alghe, riso, manzo saltato in salsa bulgoghi, wurstel, rapa agrodolce, spinaci, carota, cetriolo, uova", "price": 10 },
-            { "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
-            { "n": 31, "name": "Kimbap all'insalata", "ko": "샐러드 김밥", "zh": "沙拉紫菜卷", "desc": "Alghe, riso, cavolo, wurstel, rapa agrodolce, cetriolo, uova, maionese", "price": 9 },
+            { "photo": "kimbap-bbq", "n": 29, "name": "Kimbap al BBQ", "ko": "불고기 김밥", "zh": "烧烤肉紫菜卷", "desc": "Alghe, riso, manzo saltato in salsa bulgoghi, wurstel, rapa agrodolce, spinaci, carota, cetriolo, uova", "price": 10 },
+            { "photo": "kimbap-tonno", "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
+            { "photo": "kimbap-insalata", "n": 31, "name": "Kimbap all'insalata", "ko": "샐러드 김밥", "zh": "沙拉紫菜卷", "desc": "Alghe, riso, cavolo, wurstel, rapa agrodolce, cetriolo, uova, maionese", "price": 9 },
             { "n": 32, "name": "O ging o deobbap", "ko": "오징어 덮밥", "zh": "辣炒鱿鱼盖饭", "desc": "Riso coperto con calamari saltati in salsa piccante", "price": 12, "spicy": true },
             { "name": "Riso in bianco", "ko": "밥", "zh": "白饭", "price": 1.5 }
           ]
@@ -176,8 +176,8 @@
           "allergens": ["A", "F"],
           "items": [
             { "photo": "jindalai-naengmyeon", "n": 33, "name": "Jindalai Naengmyeon", "ko": "연변 냉면", "zh": "延边冷面", "desc": "Spaghetti freddi in brodo agrodolce", "price": 13 },
-            { "n": 34, "name": "Jindalai bibim Naengmyeon", "ko": "연변 비빔냉면", "desc": "Spaghetti in salsa", "price": 13, "spicy": true },
-            { "n": 35, "name": "Haemul Zamppong", "ko": "해물 짬뽕", "zh": "韩式辣海鲜汤面", "desc": "Spaghetti in brodo piccante con frutti di mare misti", "price": 12, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
+            { "photo": "bibim-naengmyeon", "n": 34, "name": "Jindalai bibim Naengmyeon", "ko": "연변 비빔냉면", "desc": "Spaghetti in salsa", "price": 13, "spicy": true },
+            { "photo": "haemul-zamppong", "n": 35, "name": "Haemul Zamppong", "ko": "해물 짬뽕", "zh": "韩式辣海鲜汤面", "desc": "Spaghetti in brodo piccante con frutti di mare misti", "price": 12, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
             { "n": 36, "name": "Japchae", "ko": "잡채 볶음", "zh": "韩式炒杂菜", "desc": "Spaghetti di fecola di patata saltati con manzo e verdure", "price": 10 },
             { "n": 37, "name": "Zajangmyeon", "ko": "짜장면", "zh": "韩式炸酱面", "desc": "Spaghetti in salsa di soia nera fermentata con pancetta e verdure", "price": 10 },
             { "n": 38, "name": "Sin lamyeon", "ko": "신라면", "zh": "辛拉面", "desc": "Ramen in brodo piccante, tofu di pesce e uova", "price": 6, "spicy": true }

@@ -133,5 +133,167 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "url": "https://commons.wikimedia.org/wiki/File:Korean_barbeque-Beoseot_gui-01.jpg"
+  },
+  "kimchi-jeon": {
+    "source": "commons",
+    "alt": "Frittella di kimchi rotonda su un vassoio di vimini",
+    "title": "Korean.food-Kimchijeon-01",
+    "author": "ayustety (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean.food-Kimchijeon-01.jpg"
+  },
+  "gamja-jeon": {
+    "source": "commons",
+    "alt": "Frittelle di patata dorate su un piatto bianco",
+    "title": "Gamjajeon small",
+    "author": "Teemeah",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Gamjajeon_small.jpg"
+  },
+  "gun-mandu": {
+    "source": "commons",
+    "alt": "Ravioli coreani scottati in padella con salsa di soia",
+    "title": "Korean.cuisine-Gunmandu-01",
+    "author": "AZAdam",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Gunmandu-01.jpg"
+  },
+  "kimchi": {
+    "source": "commons",
+    "alt": "Kimchi di cavolo cinese in una ciotola bianca",
+    "title": "Baechu kimchi",
+    "author": "최광모",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Baechu_kimchi.jpg"
+  },
+  "golbaengi-muccim": {
+    "source": "commons",
+    "alt": "Insalata piccante di lumache di mare con nidi di spaghetti",
+    "title": "Golbaengi-muchim 1",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Golbaengi-muchim_1.jpg"
+  },
+  "duengiang-zighe": {
+    "source": "commons",
+    "alt": "Zuppa di pasta di soia con tofu e zucchine in una pentola di pietra",
+    "title": "Doenjang-jjigae",
+    "author": "jyleen21",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Doenjang-jjigae.jpg"
+  },
+  "sundubu-zighe": {
+    "source": "commons",
+    "alt": "Zuppa piccante di tofu morbido con frutti di mare",
+    "title": "Sundubu-jjigae - San Francisco, CA",
+    "author": "Daderot",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Sundubu-jjigae_-_San_Francisco,_CA.jpg"
+  },
+  "youkke-giang": {
+    "source": "commons",
+    "alt": "Zuppa piccante di manzo e verdure in una pentola nera",
+    "title": "Korean.cuisine-Yukgaejang-02",
+    "author": "avlxyz",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Yukgaejang-02.jpg"
+  },
+  "kimchi-zighe-tonno": {
+    "source": "commons",
+    "alt": "Zuppa di kimchi con tofu, servita con riso bianco",
+    "title": "Korean stew-Kimchi jjigae-02",
+    "author": "Alpha",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean_stew-Kimchi_jjigae-02.jpg"
+  },
+  "kimchi-zighe-maiale": {
+    "source": "commons",
+    "alt": "Zuppa di kimchi con tofu in una pentola di pietra",
+    "title": "Korean stew-Kimchi jjigae-01",
+    "author": "miyagawa",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean_stew-Kimchi_jjigae-01.jpg"
+  },
+  "bude-zighe": {
+    "source": "commons",
+    "alt": "Pentola di zuppa piccante con wurstel, tofu e spaghetti",
+    "title": "서울-부대찌개-003",
+    "author": "Park Dong-sik",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%9A%B8-%EB%B6%80%EB%8C%80%EC%B0%8C%EA%B0%9C-003.jpg"
+  },
+  "bibimbap-bbq": {
+    "source": "commons",
+    "alt": "Ciotola di riso con verdure, funghi e manzo disposti a spicchi",
+    "title": "Bibimbap 6",
+    "author": "Chloe Lim",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Bibimbap_6.jpg"
+  },
+  "bibimbap-vegetariano": {
+    "source": "commons",
+    "alt": "Ciotola di riso con verdure e germogli",
+    "title": "비빔밥",
+    "author": "David Baek",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:%EB%B9%84%EB%B9%94%EB%B0%A5.jpg"
+  },
+  "kimbap-bbq": {
+    "source": "commons",
+    "alt": "Rotolo di riso e alghe tagliato a fette su un piatto",
+    "title": "Gimbap (pixabay)",
+    "author": "changupn",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Gimbap_(pixabay).jpg"
+  },
+  "kimbap-tonno": {
+    "source": "commons",
+    "alt": "Fette di rotolo di riso e alghe con ripieno chiaro",
+    "title": "Gimbap 02",
+    "author": "최광모",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Gimbap_02.jpg"
+  },
+  "kimbap-insalata": {
+    "source": "commons",
+    "alt": "Fette di rotolo di riso e alghe viste da vicino",
+    "title": "Gimbap Kimbap Korean food 02",
+    "author": "한국의 멋",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Gimbap_Kimbap_Korean_food_02.jpg"
+  },
+  "bibim-naengmyeon": {
+    "source": "commons",
+    "alt": "Spaghetti freddi con salsa piccante, cetriolo e uovo sodo in una ciotola di metallo",
+    "title": "Bibim-naengmyeon 2",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Bibim-naengmyeon_2.jpg"
+  },
+  "haemul-zamppong": {
+    "source": "commons",
+    "alt": "Spaghetti in brodo rosso piccante con cozze",
+    "title": "Korean seafood soup ( Jjamppong)",
+    "author": "ProjectManhattan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean_seafood_soup_(_Jjamppong).jpg"
   }
 }
