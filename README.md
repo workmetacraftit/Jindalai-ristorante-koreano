@@ -7,22 +7,22 @@ Sito statico (HTML, CSS e JavaScript, senza build) del ristorante coreano Jindal
 | Pagina | File | Contenuto |
 |---|---|---|
 | Home | `index.html` | Hero, introduzione, piatti in evidenza, «Le nostre radici», prenotazione via WhatsApp, orari, indirizzo, FAQ |
-| Menu | `menu/index.html` | Tutti i piatti con i prezzi, allergeni e note |
+| Menu | `menu/index.html` | Tutti i piatti con le foto, allergeni e note |
 | La storia | `storia/index.html` | Il testo sull'etnia coreana di Yanbian che apre il menu del ristorante |
 | Errore | `404.html` | Pagina non trovata |
 
 ## Come modificare il menu
 
-Piatti e prezzi stanno in **`data/menu.json`**. Dopo ogni modifica:
+Piatti, prezzi e foto stanno in **`data/menu.json`** e **`data/photos.json`**. Dopo ogni modifica:
 
 ```
 node tools/build-menu.mjs
 ```
 
-Lo script riscrive dentro `menu/index.html` l'elenco dei piatti, la barra delle sezioni, la legenda
-degli allergeni, la data di aggiornamento e i dati strutturati per i motori di ricerca. Non servono
-installazioni: basta Node.js. Se nel file c'è un errore (prezzo mancante, allergene inesistente) lo
-script si ferma e dice quale.
+Lo script riscrive dentro `menu/index.html` l'elenco dei piatti con le foto, la barra delle sezioni,
+la legenda degli allergeni, i crediti fotografici, la data di aggiornamento e i dati strutturati per
+i motori di ricerca. Non servono installazioni: basta Node.js. Se c'è un errore (prezzo mancante,
+foto non trovata, allergene inesistente) lo script si ferma e dice quale.
 
 Ogni voce può avere:
 
@@ -32,26 +32,52 @@ Ogni voce può avere:
 | `name`, `ko`, `zh` | Nome in italiano, coreano e cinese |
 | `desc` | Descrizione o ingredienti |
 | `price` | Prezzo in euro (`prices` quando ce n'è più d'uno, come per la pancetta) |
+| `photo` | Nome della foto del piatto (vedi sotto) |
 | `spicy` | `true` per l'etichetta «Piccante» |
 | `frozen` | `true` per l'etichetta «Surgelato» (l'asterisco del menu cartaceo) |
 | `allergens` | Lettere degli allergeni del singolo piatto, es. `["B", "N"]` |
 
 Gli allergeni indicati per un'intera sezione (`allergens` della sezione) compaiono sotto il titolo.
-Per cambiare la data «prezzi aggiornati a…» si modifica `updated` in cima al file (anno-mese).
+Per cambiare la data «menu aggiornato a…» si modifica `updated` in cima al file (anno-mese).
+
+**I prezzi** restano nel file ma sul sito non si vedono: in cima a `data/menu.json` c'è
+`"showPrices": false`. Per mostrarli di nuovo basta scrivere `true` e rilanciare lo script.
 
 Due voci del menu cartaceo non sono state riportate perché sul menu risultano coperte o cancellate:
 la n. 15 e la n. 23.
+
+### Le foto dei piatti
+
+Per aggiungere o sostituire una foto (serve Python con Pillow 11.3 o successivo):
+
+```
+python3 tools/menu-photo.py la-mia-foto.jpg bibimbap
+```
+
+Il comando ritaglia la foto in un quadrato e la salva in tre misure in `assets/img/menu/`
+(`--focus` e `--zoom` servono a centrare il piatto: `python3 tools/menu-photo.py -h`). Poi:
+
+1. in `data/photos.json` aggiungi `"bibimbap": { "source": "own", "alt": "breve descrizione della foto" }`;
+2. in `data/menu.json` scrivi `"photo": "bibimbap"` nel piatto;
+3. lancia `node tools/build-menu.mjs`.
+
+Le foto con `"source": "own"` sono quelle del ristorante. Quelle con `"source": "commons"` vengono
+da Wikimedia Commons con licenza libera: per ognuna il file riporta titolo, autore, licenza e
+indirizzo della fonte, e lo script compone da solo l'elenco dei crediti in fondo al menu (la
+licenza lo richiede) e l'avviso che si tratta di foto indicative. Sostituendo una di queste con
+una foto vera del piatto, basta cambiare `source` in `own` e togliere i dati dell'autore.
 
 ## Gli altri file
 
 | File | A cosa serve |
 |---|---|
 | `assets/css/style.css` | Tutto lo stile, compresi sipario d'apertura e ingresso dell'hero (solo CSS) |
-| `assets/js/main.js` | Stato aperto/chiuso, modulo di prenotazione, navigazione su telefono, sezione evidenziata nel menu, caricamento delle animazioni |
+| `assets/js/main.js` | Stato aperto/chiuso, modulo di prenotazione, navigazione su telefono, sezione evidenziata e foto ingrandita nel menu, caricamento delle animazioni |
 | `assets/js/motion.js` | Animazioni di scroll: titoli, foto in parallasse, nastro dei piatti, striscia orizzontale fissata, linea del tempo, ingressi |
 | `assets/js/hero-lights.js` | Le lampadine della foto di facciata che brillano (un `<canvas>` sopra l'immagine) |
 | `assets/js/vendor/` | Librerie in copia locale: GSAP 3.15.1, ScrollTrigger 3.15.1, Lenis 1.3.27 |
-| `assets/img/` | Foto in AVIF e WebP, in più larghezze |
+| `assets/img/` | Foto in AVIF e WebP, in più larghezze (`menu/` per quelle dei piatti) |
+| `tools/menu-photo.py` | Prepara la foto di un piatto per il menu |
 | `vercel.json`, `.vercelignore` | Cache, header di sicurezza e file esclusi per il deploy su Vercel |
 
 Testata e piè di pagina sono ripetuti uguali nelle tre pagine: una modifica va riportata in tutte
