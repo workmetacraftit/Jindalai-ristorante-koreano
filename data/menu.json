@@ -31,8 +31,8 @@
             { "name": "Costina d'agnello sardo", "ko": "사르데냐 양갈비 구이", "zh": "撒丁岛小羊排", "price": 10 },
             { "name": "Costina d'agnello", "ko": "양갈비 구이", "price": 10 },
             { "name": "Spiedini di rene d'agnello", "ko": "양신장 꼬치", "zh": "羊腰子", "price": 3 },
-            { "name": "Spiedini d'agnello sardo", "ko": "사르데냐 양꼬치", "zh": "撒丁岛小羊肉串", "price": 2.5 },
-            { "name": "Spiedini d'agnello", "ko": "양 꼬치", "zh": "羊肉串", "price": 1.5 }
+            { "photo": "spiedini-agnello-sardo", "name": "Spiedini d'agnello sardo", "ko": "사르데냐 양꼬치", "zh": "撒丁岛小羊肉串", "price": 2.5 },
+            { "photo": "spiedini-agnello", "name": "Spiedini d'agnello", "ko": "양 꼬치", "zh": "羊肉串", "price": 1.5 }
           ]
         },
         {
@@ -66,9 +66,9 @@
           "id": "pollo", "title": "Pollo", "ko": "닭", "zh": "鸡肉类",
           "allergens": ["E", "F", "K"], "frozen": true,
           "items": [
-            { "name": "Spiedini d'ali di pollo", "ko": "닭날개 구이", "zh": "鸡翅", "price": 2.5, "spicy": true },
-            { "name": "Spiedini di pollo", "ko": "닭 꼬치", "zh": "鸡肉串", "price": 1.5 },
-            { "name": "Spiedini di ventriglio di pollo", "ko": "닭똥집 꼬치", "zh": "鸡胗串", "price": 1.5 },
+            { "photo": "ali-pollo", "name": "Spiedini d'ali di pollo", "ko": "닭날개 구이", "zh": "鸡翅", "price": 2.5, "spicy": true },
+            { "photo": "spiedini-pollo", "name": "Spiedini di pollo", "ko": "닭 꼬치", "zh": "鸡肉串", "price": 1.5 },
+            { "photo": "ventriglio-pollo", "name": "Spiedini di ventriglio di pollo", "ko": "닭똥집 꼬치", "zh": "鸡胗串", "price": 1.5 },
             { "name": "Spiedini di uova di quaglia", "ko": "메추리알 꼬치", "zh": "鹌鹑蛋", "price": 1.5 }
           ]
         },
@@ -76,11 +76,11 @@
           "id": "pesce", "title": "Pesce", "ko": "해물", "zh": "海鲜类",
           "allergens": ["B", "D", "E", "F", "K", "N"], "frozen": true,
           "items": [
-            { "name": "Anguilla", "ko": "장어 구이", "zh": "烤鳗鱼（1条）", "price": 28 },
-            { "name": "Cappesante", "ko": "가리비 구이", "zh": "蒜蓉粉丝扇贝", "price": 4 },
-            { "name": "Spiedini di calamari", "ko": "오징어 꼬치", "zh": "鱿鱼串", "price": 1.5 },
-            { "name": "Spiedini di gamberoni", "ko": "새우 꼬치", "zh": "大虾串", "price": 2.5 },
-            { "name": "Spiedini di polpette di pesce", "ko": "어묵 꼬치", "zh": "鱼丸串", "price": 1.5 }
+            { "photo": "anguilla", "name": "Anguilla", "ko": "장어 구이", "zh": "烤鳗鱼（1条）", "price": 28 },
+            { "photo": "cappesante", "name": "Cappesante", "ko": "가리비 구이", "zh": "蒜蓉粉丝扇贝", "price": 4 },
+            { "photo": "spiedini-calamari", "name": "Spiedini di calamari", "ko": "오징어 꼬치", "zh": "鱿鱼串", "price": 1.5 },
+            { "photo": "spiedini-gamberoni", "name": "Spiedini di gamberoni", "ko": "새우 꼬치", "zh": "大虾串", "price": 2.5 },
+            { "photo": "polpette-pesce", "name": "Spiedini di polpette di pesce", "ko": "어묵 꼬치", "zh": "鱼丸串", "price": 1.5 }
           ]
         },
         {
@@ -88,7 +88,7 @@
           "allergens": ["F"],
           "items": [
             { "name": "Melanzane alla griglia", "ko": "가지 구이", "zh": "蒜蓉锡纸茄子", "price": 4 },
-            { "name": "Funghi alla griglia (Pleurotus eryngii)", "ko": "새송이버섯 구이", "zh": "蒜蓉锡纸杏鲍菇", "price": 6 },
+            { "photo": "funghi-pleurotus", "name": "Funghi alla griglia (Pleurotus eryngii)", "ko": "새송이버섯 구이", "zh": "蒜蓉锡纸杏鲍菇", "price": 6 },
             { "name": "Enoki alla griglia", "ko": "팽이버섯 구이", "zh": "蒜蓉锡纸金针菇", "price": 6 },
             { "name": "Funghi champignon alla griglia", "ko": "버섯 구이", "zh": "烤白蘑菇", "price": 5 },
             { "name": "Zucchine alla griglia", "ko": "애호박 구이", "zh": "烤小南瓜（角瓜）", "price": 4 },

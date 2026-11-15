@@ -34,5 +34,104 @@
   "saeu-tuighim": {
     "source": "own",
     "alt": "Gamberoni impanati e fritti su un piatto bianco"
+  },
+  "spiedini-agnello": {
+    "source": "commons",
+    "alt": "Spiedini di agnello sulla griglia a carbone da tavolo",
+    "title": "양꼬치",
+    "author": "악미",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:%EC%96%91%EA%BC%AC%EC%B9%98.jpg"
+  },
+  "spiedini-agnello-sardo": {
+    "source": "commons",
+    "alt": "Spiedini di agnello grigliati su un piatto",
+    "title": "Kawap",
+    "author": "Mizu basyo at Japanese Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Kawap.jpg"
+  },
+  "ali-pollo": {
+    "source": "commons",
+    "alt": "Ali di pollo grigliate",
+    "title": "Roasted chicken leg piece-MB20",
+    "author": "Rajeeb Dutta",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Roasted_chicken_leg_piece-MB20.jpg"
+  },
+  "spiedini-pollo": {
+    "source": "commons",
+    "alt": "Spiedini di pollo glassati con cipollotto",
+    "title": "Dak-kkochi 3",
+    "author": "Charles Haynes",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Dak-kkochi_3.jpg"
+  },
+  "ventriglio-pollo": {
+    "source": "commons",
+    "alt": "Spiedini di ventrigli di pollo grigliati",
+    "title": "Yakitori 011",
+    "author": "Ocdp",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Yakitori_011.jpg"
+  },
+  "anguilla": {
+    "source": "commons",
+    "alt": "Anguille glassate sulla griglia",
+    "title": "Jangeo-gui",
+    "author": "mino park",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Jangeo-gui.jpg"
+  },
+  "cappesante": {
+    "source": "commons",
+    "alt": "Capesante nel guscio con aglio, spaghetti di soia e cipollotto",
+    "title": "Minced garlic glass noodle scallops",
+    "author": "lazy fri13th",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Minced_garlic_glass_noodle_scallops.jpg"
+  },
+  "spiedini-calamari": {
+    "source": "commons",
+    "alt": "Spiedini di calamari grigliati",
+    "title": "Grilled Fish and Squid for Sale - Kep - Cambodia",
+    "author": "Adam Jones Adam63",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_Fish_and_Squid_for_Sale_-_Kep_-_Cambodia.JPG"
+  },
+  "spiedini-gamberoni": {
+    "source": "commons",
+    "alt": "Spiedini di gamberi sulla griglia",
+    "title": "Grilling Shrimp Skewers 1 2017-07-20",
+    "author": "FASTILY",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilling_Shrimp_Skewers_1_2017-07-20.jpg"
+  },
+  "polpette-pesce": {
+    "source": "commons",
+    "alt": "Spiedini di pesce in brodo",
+    "title": "Eomuk-kkochi",
+    "author": "최광모 (Choe Kwangmo)",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Eomuk-kkochi.jpg"
+  },
+  "funghi-pleurotus": {
+    "source": "commons",
+    "alt": "Fette di funghi cardoncelli sulla griglia",
+    "title": "Korean barbeque-Beoseot gui-01",
+    "author": "star5112",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean_barbeque-Beoseot_gui-01.jpg"
   }
 }
