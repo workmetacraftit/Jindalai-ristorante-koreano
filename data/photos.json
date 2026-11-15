@@ -295,5 +295,86 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "url": "https://commons.wikimedia.org/wiki/File:Korean_seafood_soup_(_Jjamppong).jpg"
+  },
+  "japchae": {
+    "source": "commons",
+    "alt": "Spaghetti trasparenti saltati con verdure",
+    "title": "Japchae in Dhaka's restourant 01",
+    "author": "Ibrahim Husain Meraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Japchae_in_Dhaka%27s_restourant_01.jpg"
+  },
+  "zajangmyeon": {
+    "source": "commons",
+    "alt": "Spaghetti con salsa nera di soia e cetriolo a julienne",
+    "title": "Jajangmyeon 0",
+    "author": "사랑",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "url": "https://commons.wikimedia.org/wiki/File:Jajangmyeon_0.jpg"
+  },
+  "sin-lamyeon": {
+    "source": "commons",
+    "alt": "Ramen in brodo rosso piccante in una ciotola bianca",
+    "title": "Nongshim Shin Ramyun black 20201123 003",
+    "author": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Nongshim_Shin_Ramyun_black_20201123_003.jpg"
+  },
+  "haemul-tteokbokki": {
+    "source": "commons",
+    "alt": "Gnocchi di riso in salsa rossa piccante",
+    "title": "Tteok-bokki 7",
+    "author": "anokarina",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Tteok-bokki_7.jpg"
+  },
+  "chicken": {
+    "source": "commons",
+    "alt": "Pezzi di pollo fritto croccante",
+    "title": "Korean fried chicken 240206",
+    "author": "Startandstar",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean_fried_chicken_240206.jpg"
+  },
+  "sgombro": {
+    "source": "commons",
+    "alt": "Sgombro alla griglia su una piastra con fette di limone",
+    "title": "Godeungeo-gui",
+    "author": "Daniel Moskowitz",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Godeungeo-gui.jpg"
+  },
+  "bulgoghi": {
+    "source": "commons",
+    "alt": "Manzo marinato con verdure in una pentola, servito con riso",
+    "title": "Ttukbaegi bulgogi - Bulgogi(beef) hot pot - Kogi Korean cuisine 2024-09-03",
+    "author": "Andy Li",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Ttukbaegi_bulgogi_-_Bulgogi(beef)_hot_pot_-_Kogi_Korean_cuisine_2024-09-03.jpg"
+  },
+  "dubu-kimchi": {
+    "source": "commons",
+    "alt": "Kimchi saltato al centro di un piatto, circondato da fette di tofu",
+    "title": "Korean cuisine-Dubu kimchi-01",
+    "author": "benghan",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Dubu_kimchi-01.jpg"
+  },
+  "dakbal": {
+    "source": "commons",
+    "alt": "Zampe di pollo in salsa rossa piccante con sesamo",
+    "title": "Dakbal-bokkeum 2",
+    "author": "jyleen21",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Dakbal-bokkeum_2.jpg"
   }
 }

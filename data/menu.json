@@ -178,16 +178,16 @@
             { "photo": "jindalai-naengmyeon", "n": 33, "name": "Jindalai Naengmyeon", "ko": "연변 냉면", "zh": "延边冷面", "desc": "Spaghetti freddi in brodo agrodolce", "price": 13 },
             { "photo": "bibim-naengmyeon", "n": 34, "name": "Jindalai bibim Naengmyeon", "ko": "연변 비빔냉면", "desc": "Spaghetti in salsa", "price": 13, "spicy": true },
             { "photo": "haemul-zamppong", "n": 35, "name": "Haemul Zamppong", "ko": "해물 짬뽕", "zh": "韩式辣海鲜汤面", "desc": "Spaghetti in brodo piccante con frutti di mare misti", "price": 12, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
-            { "n": 36, "name": "Japchae", "ko": "잡채 볶음", "zh": "韩式炒杂菜", "desc": "Spaghetti di fecola di patata saltati con manzo e verdure", "price": 10 },
-            { "n": 37, "name": "Zajangmyeon", "ko": "짜장면", "zh": "韩式炸酱面", "desc": "Spaghetti in salsa di soia nera fermentata con pancetta e verdure", "price": 10 },
-            { "n": 38, "name": "Sin lamyeon", "ko": "신라면", "zh": "辛拉面", "desc": "Ramen in brodo piccante, tofu di pesce e uova", "price": 6, "spicy": true }
+            { "photo": "japchae", "n": 36, "name": "Japchae", "ko": "잡채 볶음", "zh": "韩式炒杂菜", "desc": "Spaghetti di fecola di patata saltati con manzo e verdure", "price": 10 },
+            { "photo": "zajangmyeon", "n": 37, "name": "Zajangmyeon", "ko": "짜장면", "zh": "韩式炸酱面", "desc": "Spaghetti in salsa di soia nera fermentata con pancetta e verdure", "price": 10 },
+            { "photo": "sin-lamyeon", "n": 38, "name": "Sin lamyeon", "ko": "신라면", "zh": "辛拉面", "desc": "Ramen in brodo piccante, tofu di pesce e uova", "price": 6, "spicy": true }
           ]
         },
         {
           "id": "gnocchi", "title": "Gnocchi di riso", "ko": "떡볶이", "zh": "年糕类",
           "allergens": ["F"],
           "items": [
-            { "n": 39, "name": "Haemul Tteokbokki", "ko": "해물 떡볶이", "zh": "海鲜辣年糕", "desc": "Gnocchi di riso con frutti di mare misti in salsa piccante", "price": 10, "spicy": true, "allergens": ["B", "N"] },
+            { "photo": "haemul-tteokbokki", "n": 39, "name": "Haemul Tteokbokki", "ko": "해물 떡볶이", "zh": "海鲜辣年糕", "desc": "Gnocchi di riso con frutti di mare misti in salsa piccante", "price": 10, "spicy": true, "allergens": ["B", "N"] },
             { "n": 40, "name": "Olio aglio Tteokbokki", "ko": "올리오 알리오 떡볶이", "zh": "蒜香年糕", "desc": "Gnocchi di riso all'olio e aglio", "price": 10, "allergens": ["B"] },
             { "photo": "cheese-tteokbokki", "n": 41, "name": "Cheese Tteokbokki", "ko": "치즈 떡볶이", "zh": "芝士年糕", "desc": "Gnocchi di riso in salsa piccante coperti con mozzarella", "price": 10, "spicy": true, "allergens": ["G"] },
             { "n": 42, "name": "Gungjung Tteokbokki", "ko": "궁중 떡볶이", "zh": "宫廷年糕", "desc": "Gnocchi di riso in salsa di soia, verdure e manzo, tofu di pesce", "price": 10 }
@@ -197,15 +197,15 @@
           "id": "caldi", "title": "Piatti caldi", "ko": "요리", "zh": "热菜",
           "allergens": ["F", "K"],
           "items": [
-            { "n": 43, "name": "Chicken", "ko": "치킨", "zh": "韩式炸鸡", "desc": "Pollo fritto, salsa piccante a parte", "price": 13 },
+            { "photo": "chicken", "n": 43, "name": "Chicken", "ko": "치킨", "zh": "韩式炸鸡", "desc": "Pollo fritto, salsa piccante a parte", "price": 13 },
             { "photo": "tangsuyuk", "n": 44, "name": "Tangsuyuk", "ko": "납작 탕수육", "zh": "锅包肉", "desc": "Maiale fritto in salsa agrodolce", "price": 13 },
             { "photo": "saeu-tuighim", "n": 45, "name": "Saeu Tuighim", "ko": "크림소스 새우튀김", "zh": "秘制炸虾", "desc": "Gamberoni fritti in salsa agrodolce", "price": 13, "allergens": ["B"] },
             { "n": 46, "name": "Haemul nurongji", "ko": "해물누룽지", "zh": "海鲜锅巴", "desc": "Riso arrosto con frutti di mare misti", "price": 12, "allergens": ["B", "N"] },
-            { "n": 47, "name": "Sgombro alla griglia", "ko": "고등어 구이", "zh": "煎鲭鱼", "price": 10, "frozen": true, "allergens": ["D"] },
+            { "photo": "sgombro", "n": 47, "name": "Sgombro alla griglia", "ko": "고등어 구이", "zh": "煎鲭鱼", "price": 10, "frozen": true, "allergens": ["D"] },
             { "n": 48, "name": "Cheese Buldak", "ko": "치즈 불닭", "zh": "芝士辣鸡", "desc": "Pollo saltato in salsa piccante coperto con mozzarella", "price": 12, "spicy": true },
-            { "n": 49, "name": "Bulgoghi", "ko": "불고기", "zh": "烧烤汁牛肉", "desc": "Noce di manzo marinata in salsa bulgoghi e saltata con verdure", "price": 12 },
-            { "n": 50, "name": "Dubu kimchi", "ko": "두부 김치", "zh": "豆腐泡菜", "desc": "Tofu al vapore con kimchi saltato", "price": 10 },
-            { "n": 51, "name": "Dakbal", "ko": "매운 닭발", "zh": "辣鸡爪", "desc": "Zampe di pollo marinate in salsa piccante, al vapore", "price": 10, "spicy": true },
+            { "photo": "bulgoghi", "n": 49, "name": "Bulgoghi", "ko": "불고기", "zh": "烧烤汁牛肉", "desc": "Noce di manzo marinata in salsa bulgoghi e saltata con verdure", "price": 12 },
+            { "photo": "dubu-kimchi", "n": 50, "name": "Dubu kimchi", "ko": "두부 김치", "zh": "豆腐泡菜", "desc": "Tofu al vapore con kimchi saltato", "price": 10 },
+            { "photo": "dakbal", "n": 51, "name": "Dakbal", "ko": "매운 닭발", "zh": "辣鸡爪", "desc": "Zampe di pollo marinate in salsa piccante, al vapore", "price": 10, "spicy": true },
             { "n": 52, "name": "O ging o bokkum", "ko": "오징어 볶음", "zh": "韩式辣炒鱿鱼", "desc": "Calamari saltati in salsa piccante con verdure", "price": 12, "spicy": true }
           ]
         }
