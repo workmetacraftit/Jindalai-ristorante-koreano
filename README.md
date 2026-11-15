@@ -61,7 +61,10 @@ Il comando ritaglia la foto in un quadrato e la salva in tre misure in `assets/i
 2. in `data/menu.json` scrivi `"photo": "bibimbap"` nel piatto;
 3. lancia `node tools/build-menu.mjs`.
 
-Le foto con `"source": "own"` sono quelle del ristorante. Quelle con `"source": "commons"` vengono
+Le foto con `"source": "own"` sono quelle del ristorante. Quelle con `"source": "menu"` sono ritagli
+dalle foto del menu stampato: sono piccole, quindi hanno `"small": true` e sul sito compaiono solo
+come miniatura, senza ingrandimento (si preparano con `python3 tools/menu-photo.py … --paper`).
+Appena c'è una foto vera del piatto conviene sostituirle. Quelle con `"source": "commons"` vengono
 da Wikimedia Commons con licenza libera: per ognuna il file riporta titolo, autore, licenza e
 indirizzo della fonte, e lo script compone da solo l'elenco dei crediti in fondo al menu (la
 licenza lo richiede) e l'avviso che si tratta di foto indicative. Sostituendo una di queste con
