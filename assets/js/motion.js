@@ -130,8 +130,8 @@
     if (window.Lenis) {
       lenis = new window.Lenis({
         anchors: true, lerp: 0.12,
-        // a navigazione aperta (telefono) la pagina sotto resta ferma: Lenis lascia fare al browser
-        prevent: function () { return document.documentElement.classList.contains('nav-open'); }
+        // a navigazione aperta (telefono) o con una foto ingrandita la pagina sotto resta ferma: Lenis lascia fare al browser
+        prevent: function () { return /\b(nav|zoom)-open\b/.test(document.documentElement.className); }
       });
       lenis.on('scroll', ScrollTrigger.update);
       gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
@@ -319,7 +319,7 @@
 
   // 6. Pagine interne: le voci del menu e i paragrafi della storia entrano mentre si scorre
   passi.push(function () {
-    entra('.mgroup__head p, .msec__head, .mi, .alg, .cta__in > *', { y: 16, stagger: 0.03, duration: 0.5 });
+    entra('.mgroup__head p, .msec__head, .mi, .alg, .credits, .cta__in > *', { y: 16, stagger: 0.03, duration: 0.5 });
     entra('.story__toc, .story__body > *', { y: 22 });
   });
 

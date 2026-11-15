@@ -1,0 +1,38 @@
+{
+  "costina-bovino": {
+    "source": "own",
+    "alt": "Costine di manzo marinate e tagliate sottili"
+  },
+  "haemul-jeon": {
+    "source": "own",
+    "alt": "Frittella dorata con cipollotti e frutti di mare"
+  },
+  "chapssal-jeon": {
+    "source": "own",
+    "alt": "Frittelle tonde di riso glutinoso con sesamo"
+  },
+  "bibimbap": {
+    "source": "own",
+    "alt": "Ciotola di pietra con riso, verdure, funghi e uovo"
+  },
+  "kimchi-bokkum-bap": {
+    "source": "own",
+    "alt": "Riso saltato al kimchi con uovo all'occhio di bue"
+  },
+  "jindalai-naengmyeon": {
+    "source": "own",
+    "alt": "Ciotola dorata di spaghetti freddi in brodo con uovo sodo e cetriolo"
+  },
+  "cheese-tteokbokki": {
+    "source": "own",
+    "alt": "Padella di gnocchi di riso gratinati con mozzarella filante"
+  },
+  "tangsuyuk": {
+    "source": "own",
+    "alt": "Fettine di maiale fritte e glassate con cipollotto e carota"
+  },
+  "saeu-tuighim": {
+    "source": "own",
+    "alt": "Gamberoni impanati e fritti su un piatto bianco"
+  }
+}

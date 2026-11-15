@@ -119,6 +119,36 @@
     }
   }
 
+  // Foto dei piatti: il tocco apre la versione grande in una finestra sopra la pagina.
+  // Senza questo script il link porta semplicemente al file della foto.
+  var zoom = null;
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest ? e.target.closest('a[data-zoom]') : null;
+    if (!link || !window.HTMLDialogElement || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    if (!zoom) {
+      zoom = document.createElement('dialog');
+      zoom.className = 'zoom';
+      zoom.setAttribute('aria-label', 'Foto del piatto');
+      zoom.innerHTML = '<figure><img alt="" width="800" height="800"><figcaption><b></b><span></span></figcaption></figure>' +
+        '<form method="dialog"><button class="zoom__x" aria-label="Chiudi la foto">\u00d7</button></form>';
+      zoom.addEventListener('click', function (ev) { if (ev.target === zoom) zoom.close(); }); // tocco fuori dalla foto
+      zoom.addEventListener('close', function () { document.documentElement.classList.remove('zoom-open'); });
+      document.body.appendChild(zoom);
+    }
+    var img = zoom.querySelector('img');
+    img.removeAttribute('src'); // così non resta visibile la foto precedente mentre arriva la nuova
+    img.src = link.getAttribute('href');
+    img.alt = link.querySelector('img') ? link.querySelector('img').alt : '';
+    zoom.querySelector('b').textContent = link.getAttribute('data-zoom');
+    var credito = link.getAttribute('data-credit');
+    var nota = zoom.querySelector('span');
+    nota.textContent = credito ? 'Foto indicativa. ' + credito : '';
+    nota.hidden = !credito;
+    document.documentElement.classList.add('zoom-open');
+    zoom.showModal();
+  });
+
   // Pagina del menu: nella barra delle sezioni resta evidenziata quella che si sta leggendo
   var cats = document.querySelector('.cats');
   if (cats && window.requestAnimationFrame) {

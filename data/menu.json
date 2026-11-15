@@ -1,6 +1,7 @@
 {
   "updated": "2026-11",
   "currency": "EUR",
+  "showPrices": false,
   "allergens": {
     "A": { "short": "Glutine", "long": "Cereali contenenti glutine e prodotti derivati" },
     "B": { "short": "Crostacei", "long": "Crostacei e prodotti a base di crostacei" },
@@ -38,7 +39,7 @@
           "id": "manzo", "title": "Manzo", "ko": "소", "zh": "牛肉类",
           "allergens": ["E", "F", "K"], "frozen": true,
           "items": [
-            { "name": "Costina di bovino", "ko": "소갈비", "zh": "烤牛排", "price": 18 },
+            { "photo": "costina-bovino", "name": "Costina di bovino", "ko": "소갈비", "zh": "烤牛排", "price": 18 },
             { "name": "Spiedini di manzo", "ko": "소 꼬치", "zh": "牛肉串", "price": 1.5 },
             { "name": "Spiedini di manzo BBQ", "ko": "불고기 소꼬치", "zh": "烧烤牛肉串", "price": 1.5 },
             { "name": "Spiedini di manzo piccante", "ko": "매운 소꼬치 (마라)", "zh": "麻辣牛肉串", "price": 1.5, "spicy": true },
@@ -119,8 +120,8 @@
           "id": "frittelle", "title": "Frittelle e ravioli", "ko": "전", "zh": "饼类",
           "allergens": ["A"],
           "items": [
-            { "n": 1, "name": "Chapssal Jeon", "ko": "찹쌀전", "zh": "糯米饼", "desc": "Frittella di riso glutinoso", "price": 8 },
-            { "n": 2, "name": "Haemul Jeon", "ko": "해물파전", "zh": "海鲜葱饼", "desc": "Frittella di frutti di mare misti e cipollotti", "price": 9 },
+            { "photo": "chapssal-jeon", "n": 1, "name": "Chapssal Jeon", "ko": "찹쌀전", "zh": "糯米饼", "desc": "Frittella di riso glutinoso", "price": 8 },
+            { "photo": "haemul-jeon", "n": 2, "name": "Haemul Jeon", "ko": "해물파전", "zh": "海鲜葱饼", "desc": "Frittella di frutti di mare misti e cipollotti", "price": 9 },
             { "n": 3, "name": "Kimchi Jeon", "ko": "김치전", "zh": "泡菜饼", "desc": "Frittella di kimchi", "price": 8 },
             { "n": 4, "name": "Gamja Jeon", "ko": "감자전", "zh": "土豆饼", "desc": "Frittella di patata", "price": 8 },
             { "n": 5, "name": "Gun mandu", "ko": "군 만두", "zh": "韩式煎饺", "desc": "Ravioli alla griglia di verdure e carne, 4 pezzi", "price": 6 }
@@ -158,11 +159,11 @@
           "id": "riso", "title": "Riso", "ko": "밥", "zh": "饭类",
           "allergens": ["K", "F"],
           "items": [
-            { "n": 24, "name": "Bibimbap", "ko": "돌솥 비빔밥", "zh": "石锅拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, manzo saltato in salsa BBQ, uova", "price": 10 },
+            { "photo": "bibimbap", "n": 24, "name": "Bibimbap", "ko": "돌솥 비빔밥", "zh": "石锅拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, manzo saltato in salsa BBQ, uova", "price": 10 },
             { "n": 25, "name": "Bibimbap al BBQ", "ko": "불고기 비빔밥", "zh": "烧烤肉拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, doppio manzo saltato in salsa BBQ, uova", "price": 12 },
             { "n": 26, "name": "Bibimbap vegetariano", "ko": "야채 비빔밥", "zh": "蔬菜拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 10 },
             { "n": 27, "name": "Bibimbap al tonno", "ko": "참치 비빔밥", "zh": "金枪鱼拌饭", "desc": "Riso, tonno, lattuga, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 12 },
-            { "n": 28, "name": "Kimchi bokkum bap", "ko": "김치 볶음밥", "zh": "辣白菜炒饭", "desc": "Riso saltato con kimchi, uova", "price": 12 },
+            { "photo": "kimchi-bokkum-bap", "n": 28, "name": "Kimchi bokkum bap", "ko": "김치 볶음밥", "zh": "辣白菜炒饭", "desc": "Riso saltato con kimchi, uova", "price": 12 },
             { "n": 29, "name": "Kimbap al BBQ", "ko": "불고기 김밥", "zh": "烧烤肉紫菜卷", "desc": "Alghe, riso, manzo saltato in salsa bulgoghi, wurstel, rapa agrodolce, spinaci, carota, cetriolo, uova", "price": 10 },
             { "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
             { "n": 31, "name": "Kimbap all'insalata", "ko": "샐러드 김밥", "zh": "沙拉紫菜卷", "desc": "Alghe, riso, cavolo, wurstel, rapa agrodolce, cetriolo, uova, maionese", "price": 9 },
@@ -174,7 +175,7 @@
           "id": "spaghetti", "title": "Spaghetti", "ko": "면", "zh": "面类",
           "allergens": ["A", "F"],
           "items": [
-            { "n": 33, "name": "Jindalai Naengmyeon", "ko": "연변 냉면", "zh": "延边冷面", "desc": "Spaghetti freddi in brodo agrodolce", "price": 13 },
+            { "photo": "jindalai-naengmyeon", "n": 33, "name": "Jindalai Naengmyeon", "ko": "연변 냉면", "zh": "延边冷面", "desc": "Spaghetti freddi in brodo agrodolce", "price": 13 },
             { "n": 34, "name": "Jindalai bibim Naengmyeon", "ko": "연변 비빔냉면", "desc": "Spaghetti in salsa", "price": 13, "spicy": true },
             { "n": 35, "name": "Haemul Zamppong", "ko": "해물 짬뽕", "zh": "韩式辣海鲜汤面", "desc": "Spaghetti in brodo piccante con frutti di mare misti", "price": 12, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
             { "n": 36, "name": "Japchae", "ko": "잡채 볶음", "zh": "韩式炒杂菜", "desc": "Spaghetti di fecola di patata saltati con manzo e verdure", "price": 10 },
@@ -188,7 +189,7 @@
           "items": [
             { "n": 39, "name": "Haemul Tteokbokki", "ko": "해물 떡볶이", "zh": "海鲜辣年糕", "desc": "Gnocchi di riso con frutti di mare misti in salsa piccante", "price": 10, "spicy": true, "allergens": ["B", "N"] },
             { "n": 40, "name": "Olio aglio Tteokbokki", "ko": "올리오 알리오 떡볶이", "zh": "蒜香年糕", "desc": "Gnocchi di riso all'olio e aglio", "price": 10, "allergens": ["B"] },
-            { "n": 41, "name": "Cheese Tteokbokki", "ko": "치즈 떡볶이", "zh": "芝士年糕", "desc": "Gnocchi di riso in salsa piccante coperti con mozzarella", "price": 10, "spicy": true, "allergens": ["G"] },
+            { "photo": "cheese-tteokbokki", "n": 41, "name": "Cheese Tteokbokki", "ko": "치즈 떡볶이", "zh": "芝士年糕", "desc": "Gnocchi di riso in salsa piccante coperti con mozzarella", "price": 10, "spicy": true, "allergens": ["G"] },
             { "n": 42, "name": "Gungjung Tteokbokki", "ko": "궁중 떡볶이", "zh": "宫廷年糕", "desc": "Gnocchi di riso in salsa di soia, verdure e manzo, tofu di pesce", "price": 10 }
           ]
         },
@@ -197,8 +198,8 @@
           "allergens": ["F", "K"],
           "items": [
             { "n": 43, "name": "Chicken", "ko": "치킨", "zh": "韩式炸鸡", "desc": "Pollo fritto, salsa piccante a parte", "price": 13 },
-            { "n": 44, "name": "Tangsuyuk", "ko": "납작 탕수육", "zh": "锅包肉", "desc": "Maiale fritto in salsa agrodolce", "price": 13 },
-            { "n": 45, "name": "Saeu Tuighim", "ko": "크림소스 새우튀김", "zh": "秘制炸虾", "desc": "Gamberoni fritti in salsa agrodolce", "price": 13, "allergens": ["B"] },
+            { "photo": "tangsuyuk", "n": 44, "name": "Tangsuyuk", "ko": "납작 탕수육", "zh": "锅包肉", "desc": "Maiale fritto in salsa agrodolce", "price": 13 },
+            { "photo": "saeu-tuighim", "n": 45, "name": "Saeu Tuighim", "ko": "크림소스 새우튀김", "zh": "秘制炸虾", "desc": "Gamberoni fritti in salsa agrodolce", "price": 13, "allergens": ["B"] },
             { "n": 46, "name": "Haemul nurongji", "ko": "해물누룽지", "zh": "海鲜锅巴", "desc": "Riso arrosto con frutti di mare misti", "price": 12, "allergens": ["B", "N"] },
             { "n": 47, "name": "Sgombro alla griglia", "ko": "고등어 구이", "zh": "煎鲭鱼", "price": 10, "frozen": true, "allergens": ["D"] },
             { "n": 48, "name": "Cheese Buldak", "ko": "치즈 불닭", "zh": "芝士辣鸡", "desc": "Pollo saltato in salsa piccante coperto con mozzarella", "price": 12, "spicy": true },
