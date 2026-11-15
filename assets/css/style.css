@@ -461,10 +461,11 @@ main .mgroup,main .msec,main .alg,main .credits{scroll-margin-top:calc(var(--top
 /* dish photo: a square on the right; the link opens the large version (in a dialog when JavaScript is on) */
 .mi__pic{flex:none;display:block;width:104px;border-radius:14px;overflow:hidden;background:var(--bg-3);cursor:zoom-in}
 .mi__pic img{width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.mi__pic--still{cursor:default}
 @media (min-width:700px){.mi__pic{width:128px}}
 @media (hover:hover) and (prefers-reduced-motion:no-preference){
   .mi__pic img{transition:scale .5s cubic-bezier(.2,.7,.2,1)}
-  .mi__pic:hover img{scale:1.07}
+  a.mi__pic:hover img{scale:1.07}
 }
 .mi__row{display:flex;align-items:baseline;gap:.6rem}
 .mi__name{font-family:var(--display);font-weight:600;font-size:1.0938rem;line-height:1.25;letter-spacing:-.005em}

@@ -28,8 +28,8 @@
           "id": "agnello", "title": "Agnello", "ko": "양", "zh": "羊肉类",
           "allergens": ["E", "F", "K"], "frozen": true,
           "items": [
-            { "name": "Costina d'agnello sardo", "ko": "사르데냐 양갈비 구이", "zh": "撒丁岛小羊排", "price": 10 },
-            { "name": "Costina d'agnello", "ko": "양갈비 구이", "price": 10 },
+            { "photo": "costina-agnello-sardo", "name": "Costina d'agnello sardo", "ko": "사르데냐 양갈비 구이", "zh": "撒丁岛小羊排", "price": 10 },
+            { "photo": "costina-agnello", "name": "Costina d'agnello", "ko": "양갈비 구이", "price": 10 },
             { "name": "Spiedini di rene d'agnello", "ko": "양신장 꼬치", "zh": "羊腰子", "price": 3 },
             { "photo": "spiedini-agnello-sardo", "name": "Spiedini d'agnello sardo", "ko": "사르데냐 양꼬치", "zh": "撒丁岛小羊肉串", "price": 2.5 },
             { "photo": "spiedini-agnello", "name": "Spiedini d'agnello", "ko": "양 꼬치", "zh": "羊肉串", "price": 1.5 }
@@ -40,22 +40,22 @@
           "allergens": ["E", "F", "K"], "frozen": true,
           "items": [
             { "photo": "costina-bovino", "name": "Costina di bovino", "ko": "소갈비", "zh": "烤牛排", "price": 18 },
-            { "name": "Spiedini di manzo", "ko": "소 꼬치", "zh": "牛肉串", "price": 1.5 },
-            { "name": "Spiedini di manzo BBQ", "ko": "불고기 소꼬치", "zh": "烧烤牛肉串", "price": 1.5 },
-            { "name": "Spiedini di manzo piccante", "ko": "매운 소꼬치 (마라)", "zh": "麻辣牛肉串", "price": 1.5, "spicy": true },
-            { "name": "Spiedini di legamento bovino", "ko": "소힘줄 꼬치", "zh": "牛板筋串", "price": 2 },
-            { "name": "Spiedini d'arteria del cuore", "ko": "소심장 동맥 꼬치", "zh": "牛心管串", "price": 2 },
-            { "name": "Spiedini di trippa", "ko": "소위 꼬치", "zh": "牛肚串", "price": 1.5 }
+            { "photo": "spiedini-manzo", "name": "Spiedini di manzo", "ko": "소 꼬치", "zh": "牛肉串", "price": 1.5 },
+            { "photo": "spiedini-manzo-bbq", "name": "Spiedini di manzo BBQ", "ko": "불고기 소꼬치", "zh": "烧烤牛肉串", "price": 1.5 },
+            { "photo": "spiedini-manzo-piccante", "name": "Spiedini di manzo piccante", "ko": "매운 소꼬치 (마라)", "zh": "麻辣牛肉串", "price": 1.5, "spicy": true },
+            { "photo": "spiedini-legamento", "name": "Spiedini di legamento bovino", "ko": "소힘줄 꼬치", "zh": "牛板筋串", "price": 2 },
+            { "photo": "spiedini-arteria", "name": "Spiedini d'arteria del cuore", "ko": "소심장 동맥 꼬치", "zh": "牛心管串", "price": 2 },
+            { "photo": "spiedini-trippa", "name": "Spiedini di trippa", "ko": "소위 꼬치", "zh": "牛肚串", "price": 1.5 }
           ]
         },
         {
           "id": "suino", "title": "Suino", "ko": "돼지", "zh": "猪肉类",
           "allergens": ["E", "F", "K"], "frozen": true,
           "items": [
-            { "name": "Pancetta alla griglia", "ko": "삼겹살 구이 (1인분 / 2인분)", "zh": "烤五花肉（1人份 / 两人份）", "desc": "Con lattuga e salsa. Per 1 persona o per 2 persone.", "prices": [ { "label": "Per 1 persona", "price": 15 }, { "label": "Per 2 persone", "price": 25 } ] },
-            { "name": "Spiedini di sausage", "ko": "소시지 꼬치", "zh": "王中王香肠串", "price": 1 },
-            { "name": "Spiedini d'osso morbido", "ko": "오돌뼈 꼬치", "zh": "猪脆骨串", "price": 2 },
-            { "name": "Spiedini di cotenna", "ko": "껍데기 꼬치", "zh": "猪皮串", "price": 1 },
+            { "photo": "pancetta", "name": "Pancetta alla griglia", "ko": "삼겹살 구이 (1인분 / 2인분)", "zh": "烤五花肉（1人份 / 两人份）", "desc": "Con lattuga e salsa. Per 1 persona o per 2 persone.", "prices": [ { "label": "Per 1 persona", "price": 15 }, { "label": "Per 2 persone", "price": 25 } ] },
+            { "photo": "spiedini-sausage", "name": "Spiedini di sausage", "ko": "소시지 꼬치", "zh": "王中王香肠串", "price": 1 },
+            { "photo": "osso-morbido", "name": "Spiedini d'osso morbido", "ko": "오돌뼈 꼬치", "zh": "猪脆骨串", "price": 2 },
+            { "photo": "cotenna", "name": "Spiedini di cotenna", "ko": "껍데기 꼬치", "zh": "猪皮串", "price": 1 },
             { "name": "Spiedini di fegato", "ko": "간 꼬치", "zh": "猪肝串", "price": 1.5 },
             { "name": "Spiedini di milza", "ko": "비장 꼬치", "zh": "沙肝串", "price": 1.5 },
             { "name": "Spiedini di rene", "ko": "신장 꼬치", "zh": "猪腰子串", "price": 1.5 },
@@ -87,17 +87,17 @@
           "id": "verdura", "title": "Verdura", "ko": "야채", "zh": "蔬菜类",
           "allergens": ["F"],
           "items": [
-            { "name": "Melanzane alla griglia", "ko": "가지 구이", "zh": "蒜蓉锡纸茄子", "price": 4 },
+            { "photo": "melanzane", "name": "Melanzane alla griglia", "ko": "가지 구이", "zh": "蒜蓉锡纸茄子", "price": 4 },
             { "photo": "funghi-pleurotus", "name": "Funghi alla griglia (Pleurotus eryngii)", "ko": "새송이버섯 구이", "zh": "蒜蓉锡纸杏鲍菇", "price": 6 },
-            { "name": "Enoki alla griglia", "ko": "팽이버섯 구이", "zh": "蒜蓉锡纸金针菇", "price": 6 },
-            { "name": "Funghi champignon alla griglia", "ko": "버섯 구이", "zh": "烤白蘑菇", "price": 5 },
-            { "name": "Zucchine alla griglia", "ko": "애호박 구이", "zh": "烤小南瓜（角瓜）", "price": 4 },
-            { "name": "Patata alla griglia", "ko": "감자 구이", "zh": "烤土豆", "price": 4 },
-            { "name": "Patata dolce alla griglia", "ko": "고구마 구이", "zh": "烤地瓜", "price": 4 },
+            { "photo": "enoki", "name": "Enoki alla griglia", "ko": "팽이버섯 구이", "zh": "蒜蓉锡纸金针菇", "price": 6 },
+            { "photo": "champignon", "name": "Funghi champignon alla griglia", "ko": "버섯 구이", "zh": "烤白蘑菇", "price": 5 },
+            { "photo": "zucchine", "name": "Zucchine alla griglia", "ko": "애호박 구이", "zh": "烤小南瓜（角瓜）", "price": 4 },
+            { "photo": "patata", "name": "Patata alla griglia", "ko": "감자 구이", "zh": "烤土豆", "price": 4 },
+            { "photo": "patata-dolce", "name": "Patata dolce alla griglia", "ko": "고구마 구이", "zh": "烤地瓜", "price": 4 },
             { "name": "Cavolfiore alla griglia", "ko": "브로콜리 구이", "zh": "烤花菜", "price": 4 },
             { "name": "Erba cipolla alla griglia", "ko": "부추 구이", "zh": "烤韭菜", "price": 2 },
-            { "name": "Spiedini d'asparagi", "ko": "아스파라거스 꼬치", "zh": "芦笋串", "price": 2 },
-            { "name": "Spiedini di pannocchia", "ko": "옥수수 꼬치", "zh": "玉米串", "price": 2 },
+            { "photo": "asparagi", "name": "Spiedini d'asparagi", "ko": "아스파라거스 꼬치", "zh": "芦笋串", "price": 2 },
+            { "photo": "pannocchia", "name": "Spiedini di pannocchia", "ko": "옥수수 꼬치", "zh": "玉米串", "price": 2 },
             { "name": "Spiedini di pane", "ko": "빵 꼬치", "zh": "馒头串", "price": 1 },
             { "name": "Spiedini d'aglio", "ko": "마늘 꼬치", "zh": "大蒜串", "price": 1 },
             { "name": "Spiedini di piante d'aglio", "ko": "마늘쫑 꼬치", "zh": "蒜苗串", "price": 1 }
@@ -132,14 +132,14 @@
           "allergens": ["F", "K"],
           "items": [
             { "photo": "kimchi", "n": 6, "name": "Kimchi", "ko": "김치", "zh": "辣白菜", "desc": "Cavolo cinese marinato e fermentato con spezie e peperoncino", "price": 6, "allergens": ["D"] },
-            { "n": 7, "name": "Insalata di tofu secco", "ko": "건두부 무침", "zh": "凉拌干豆腐", "price": 7, "spicy": true },
-            { "n": 8, "name": "Insalata di manzo con cetriolo", "ko": "소고기 오이 무침", "zh": "黄瓜拌牛肉", "price": 10, "spicy": true },
+            { "photo": "tofu-secco", "n": 7, "name": "Insalata di tofu secco", "ko": "건두부 무침", "zh": "凉拌干豆腐", "price": 7, "spicy": true },
+            { "photo": "manzo-cetriolo", "n": 8, "name": "Insalata di manzo con cetriolo", "ko": "소고기 오이 무침", "zh": "黄瓜拌牛肉", "price": 10, "spicy": true },
             { "photo": "golbaengi-muccim", "n": 9, "name": "Golbaengi muccim", "ko": "골뱅이 무침", "zh": "韩式拌螺", "desc": "Lumache, cetriolo, spaghetti di grano, salsa piccante", "price": 14, "spicy": true },
             { "n": 10, "name": "Insalata di manzo con coriandolo", "ko": "소고기 무침", "zh": "拌牛腱子肉", "price": 10, "spicy": true },
-            { "n": 11, "name": "Insalata di legamento bovino", "ko": "소힘줄 무침", "zh": "拌牛板筋", "price": 10, "spicy": true },
-            { "n": 12, "name": "Insalata di radice", "ko": "도라지 무침", "zh": "凉拌桔梗", "price": 10, "spicy": true },
-            { "n": 13, "name": "Insalata di seppia con cetriolo", "ko": "꼴뚜기 무침", "zh": "拌墨斗", "price": 12, "spicy": true, "frozen": true },
-            { "n": 14, "name": "Insalata di patata", "ko": "감자 무침", "zh": "凉拌土豆丝", "price": 7, "spicy": true, "allergens": ["E"] }
+            { "photo": "insalata-legamento", "n": 11, "name": "Insalata di legamento bovino", "ko": "소힘줄 무침", "zh": "拌牛板筋", "price": 10, "spicy": true },
+            { "photo": "insalata-radice", "n": 12, "name": "Insalata di radice", "ko": "도라지 무침", "zh": "凉拌桔梗", "price": 10, "spicy": true },
+            { "photo": "insalata-seppia", "n": 13, "name": "Insalata di seppia con cetriolo", "ko": "꼴뚜기 무침", "zh": "拌墨斗", "price": 12, "spicy": true, "frozen": true },
+            { "photo": "insalata-patata", "n": 14, "name": "Insalata di patata", "ko": "감자 무침", "zh": "凉拌土豆丝", "price": 7, "spicy": true, "allergens": ["E"] }
           ]
         },
         {
@@ -167,7 +167,7 @@
             { "photo": "kimbap-bbq", "n": 29, "name": "Kimbap al BBQ", "ko": "불고기 김밥", "zh": "烧烤肉紫菜卷", "desc": "Alghe, riso, manzo saltato in salsa bulgoghi, wurstel, rapa agrodolce, spinaci, carota, cetriolo, uova", "price": 10 },
             { "photo": "kimbap-tonno", "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
             { "photo": "kimbap-insalata", "n": 31, "name": "Kimbap all'insalata", "ko": "샐러드 김밥", "zh": "沙拉紫菜卷", "desc": "Alghe, riso, cavolo, wurstel, rapa agrodolce, cetriolo, uova, maionese", "price": 9 },
-            { "n": 32, "name": "O ging o deobbap", "ko": "오징어 덮밥", "zh": "辣炒鱿鱼盖饭", "desc": "Riso coperto con calamari saltati in salsa piccante", "price": 12, "spicy": true },
+            { "photo": "ojingeo-deobbap", "n": 32, "name": "O ging o deobbap", "ko": "오징어 덮밥", "zh": "辣炒鱿鱼盖饭", "desc": "Riso coperto con calamari saltati in salsa piccante", "price": 12, "spicy": true },
             { "name": "Riso in bianco", "ko": "밥", "zh": "白饭", "price": 1.5 }
           ]
         },
@@ -188,9 +188,9 @@
           "allergens": ["F"],
           "items": [
             { "photo": "haemul-tteokbokki", "n": 39, "name": "Haemul Tteokbokki", "ko": "해물 떡볶이", "zh": "海鲜辣年糕", "desc": "Gnocchi di riso con frutti di mare misti in salsa piccante", "price": 10, "spicy": true, "allergens": ["B", "N"] },
-            { "n": 40, "name": "Olio aglio Tteokbokki", "ko": "올리오 알리오 떡볶이", "zh": "蒜香年糕", "desc": "Gnocchi di riso all'olio e aglio", "price": 10, "allergens": ["B"] },
+            { "photo": "olio-aglio-tteokbokki", "n": 40, "name": "Olio aglio Tteokbokki", "ko": "올리오 알리오 떡볶이", "zh": "蒜香年糕", "desc": "Gnocchi di riso all'olio e aglio", "price": 10, "allergens": ["B"] },
             { "photo": "cheese-tteokbokki", "n": 41, "name": "Cheese Tteokbokki", "ko": "치즈 떡볶이", "zh": "芝士年糕", "desc": "Gnocchi di riso in salsa piccante coperti con mozzarella", "price": 10, "spicy": true, "allergens": ["G"] },
-            { "n": 42, "name": "Gungjung Tteokbokki", "ko": "궁중 떡볶이", "zh": "宫廷年糕", "desc": "Gnocchi di riso in salsa di soia, verdure e manzo, tofu di pesce", "price": 10 }
+            { "photo": "gungjung-tteokbokki", "n": 42, "name": "Gungjung Tteokbokki", "ko": "궁중 떡볶이", "zh": "宫廷年糕", "desc": "Gnocchi di riso in salsa di soia, verdure e manzo, tofu di pesce", "price": 10 }
           ]
         },
         {
@@ -200,13 +200,13 @@
             { "photo": "chicken", "n": 43, "name": "Chicken", "ko": "치킨", "zh": "韩式炸鸡", "desc": "Pollo fritto, salsa piccante a parte", "price": 13 },
             { "photo": "tangsuyuk", "n": 44, "name": "Tangsuyuk", "ko": "납작 탕수육", "zh": "锅包肉", "desc": "Maiale fritto in salsa agrodolce", "price": 13 },
             { "photo": "saeu-tuighim", "n": 45, "name": "Saeu Tuighim", "ko": "크림소스 새우튀김", "zh": "秘制炸虾", "desc": "Gamberoni fritti in salsa agrodolce", "price": 13, "allergens": ["B"] },
-            { "n": 46, "name": "Haemul nurongji", "ko": "해물누룽지", "zh": "海鲜锅巴", "desc": "Riso arrosto con frutti di mare misti", "price": 12, "allergens": ["B", "N"] },
+            { "photo": "haemul-nurongji", "n": 46, "name": "Haemul nurongji", "ko": "해물누룽지", "zh": "海鲜锅巴", "desc": "Riso arrosto con frutti di mare misti", "price": 12, "allergens": ["B", "N"] },
             { "photo": "sgombro", "n": 47, "name": "Sgombro alla griglia", "ko": "고등어 구이", "zh": "煎鲭鱼", "price": 10, "frozen": true, "allergens": ["D"] },
-            { "n": 48, "name": "Cheese Buldak", "ko": "치즈 불닭", "zh": "芝士辣鸡", "desc": "Pollo saltato in salsa piccante coperto con mozzarella", "price": 12, "spicy": true },
+            { "photo": "cheese-buldak", "n": 48, "name": "Cheese Buldak", "ko": "치즈 불닭", "zh": "芝士辣鸡", "desc": "Pollo saltato in salsa piccante coperto con mozzarella", "price": 12, "spicy": true },
             { "photo": "bulgoghi", "n": 49, "name": "Bulgoghi", "ko": "불고기", "zh": "烧烤汁牛肉", "desc": "Noce di manzo marinata in salsa bulgoghi e saltata con verdure", "price": 12 },
             { "photo": "dubu-kimchi", "n": 50, "name": "Dubu kimchi", "ko": "두부 김치", "zh": "豆腐泡菜", "desc": "Tofu al vapore con kimchi saltato", "price": 10 },
             { "photo": "dakbal", "n": 51, "name": "Dakbal", "ko": "매운 닭발", "zh": "辣鸡爪", "desc": "Zampe di pollo marinate in salsa piccante, al vapore", "price": 10, "spicy": true },
-            { "n": 52, "name": "O ging o bokkum", "ko": "오징어 볶음", "zh": "韩式辣炒鱿鱼", "desc": "Calamari saltati in salsa piccante con verdure", "price": 12, "spicy": true }
+            { "photo": "ojingeo-bokkum", "n": 52, "name": "O ging o bokkum", "ko": "오징어 볶음", "zh": "韩式辣炒鱿鱼", "desc": "Calamari saltati in salsa piccante con verdure", "price": 12, "spicy": true }
           ]
         }
       ]

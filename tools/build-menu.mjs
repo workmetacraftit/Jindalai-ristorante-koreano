@@ -50,7 +50,8 @@ for (const g of data.groups) {
       if (it.photo) {
         const ph = photos[it.photo];
         if (!ph) fail(`la foto "${it.photo}" di «${it.name}» non è descritta in data/photos.json`);
-        for (const w of [...PHOTO_SIZES, 800]) for (const ext of ['avif', 'webp']) {
+        // le foto piccole ("small": true, es. i ritagli dal menu stampato) non hanno la versione grande
+        for (const w of ph.small ? PHOTO_SIZES : [...PHOTO_SIZES, 800]) for (const ext of ['avif', 'webp']) {
           if (!existsSync(join(root, 'assets', 'img', 'menu', `${it.photo}-${w}.${ext}`))) fail(`manca il file assets/img/menu/${it.photo}-${w}.${ext}`);
         }
         if (ph.source === 'commons' && !(ph.author && ph.license && ph.url)) fail(`foto "${it.photo}": servono autore, licenza e indirizzo della fonte`);
@@ -76,14 +77,19 @@ function picture(it) {
   const set = (ext) => PHOTO_SIZES.map((w) => `${PHOTO_DIR}${it.photo}-${w}.${ext} ${w}w`).join(', ');
   const sizes = '(min-width: 700px) 128px, 104px';
   const credit = ph.source === 'commons' ? ` data-credit="${esc(`Foto: ${ph.author}, ${ph.license}`)}"` : '';
-  // Il link porta alla foto grande anche senza JavaScript; con JavaScript si apre in una finestra sulla pagina
-  return [
-    `            <a class="mi__pic" href="${PHOTO_DIR}${it.photo}-800.webp" data-zoom="${esc(it.name)}"${credit}>`,
+  const pic = [
     '              <picture>',
     `                <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">`,
     `                <source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">`,
     `                <img src="${PHOTO_DIR}${it.photo}-400.webp" width="400" height="400" loading="lazy" decoding="async" alt="${esc(ph.alt || it.name)}">`,
-    '              </picture>',
+    '              </picture>'
+  ];
+  // Foto piccola: solo la miniatura, senza ingrandimento
+  if (ph.small) return ['            <span class="mi__pic mi__pic--still">', ...pic, '            </span>'].join('\n');
+  // Il link porta alla foto grande anche senza JavaScript; con JavaScript si apre in una finestra sulla pagina
+  return [
+    `            <a class="mi__pic" href="${PHOTO_DIR}${it.photo}-800.webp" data-zoom="${esc(it.name)}"${credit}>`,
+    ...pic,
     `              <span class="vh">Ingrandisci la foto</span>`,
     '            </a>'
   ].join('\n');
@@ -201,7 +207,7 @@ const ld = {
             ...(it.ko || it.zh ? { alternateName: [it.ko, it.zh].filter(Boolean) } : {}),
             ...(it.desc ? { description: it.desc } : {}),
             // solo le foto del ristorante: quelle d'archivio non ritraggono il piatto servito
-            ...(it.photo && photos[it.photo].source !== 'commons' ? { image: `${SITE}${PHOTO_DIR}${it.photo}-800.webp` } : {}),
+            ...(it.photo && photos[it.photo].source !== 'commons' && !photos[it.photo].small ? { image: `${SITE}${PHOTO_DIR}${it.photo}-800.webp` } : {}),
             ...(showPrices ? { offers: it.prices ? it.prices.map((p) => offer(p.price, p.label)) : offer(it.price) } : {})
           }))
         }))

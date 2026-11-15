@@ -324,13 +324,9 @@
     "url": "https://commons.wikimedia.org/wiki/File:Nongshim_Shin_Ramyun_black_20201123_003.jpg"
   },
   "haemul-tteokbokki": {
-    "source": "commons",
-    "alt": "Gnocchi di riso in salsa rossa piccante",
-    "title": "Tteok-bokki 7",
-    "author": "anokarina",
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Tteok-bokki_7.jpg"
+    "source": "menu",
+    "small": true,
+    "alt": "Gnocchi di riso in salsa piccante con cozze"
   },
   "chicken": {
     "source": "commons",
@@ -351,13 +347,9 @@
     "url": "https://commons.wikimedia.org/wiki/File:Godeungeo-gui.jpg"
   },
   "bulgoghi": {
-    "source": "commons",
-    "alt": "Manzo marinato con verdure in una pentola, servito con riso",
-    "title": "Ttukbaegi bulgogi - Bulgogi(beef) hot pot - Kogi Korean cuisine 2024-09-03",
-    "author": "Andy Li",
-    "license": "CC0",
-    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-    "url": "https://commons.wikimedia.org/wiki/File:Ttukbaegi_bulgogi_-_Bulgogi(beef)_hot_pot_-_Kogi_Korean_cuisine_2024-09-03.jpg"
+    "source": "menu",
+    "small": true,
+    "alt": "Manzo marinato saltato con verdure su una piastra"
   },
   "dubu-kimchi": {
     "source": "commons",
@@ -376,5 +368,221 @@
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "url": "https://commons.wikimedia.org/wiki/File:Dakbal-bokkeum_2.jpg"
+  },
+  "ojingeo-bokkum": {
+    "source": "commons",
+    "alt": "Calamari saltati in salsa piccante con cipolla, peperoni verdi e sesamo",
+    "title": "2020-03-14 12.08.38 오징어볶음",
+    "author": "Choi Kwang-mo",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:2020-03-14_12.08.38_%EC%98%A4%EC%A7%95%EC%96%B4%EB%B3%B6%EC%9D%8C.jpg"
+  },
+  "costina-agnello-sardo": {
+    "source": "commons",
+    "alt": "Costine di agnello sulla griglia con rosmarino",
+    "title": "Freshippo grilled lamb chops",
+    "author": "Fumikas Sagisavas",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Freshippo_grilled_lamb_chops.jpg"
+  },
+  "costina-agnello": {
+    "source": "commons",
+    "alt": "Costine di agnello grigliate su un piatto bianco",
+    "title": "Liat Portal for Foodie Disorder - Lamb Chops with Fried Potatoes and Onions",
+    "author": "HaJunkiyada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Lamb_Chops_with_Fried_Potatoes_and_Onions.jpg"
+  },
+  "spiedini-manzo": {
+    "source": "commons",
+    "alt": "Spiedini di manzo sulla griglia",
+    "title": "DFC 6118 Grilled marinated beef skewers sizzling with caramelized edges - a popular street food snack from Sattahip Chon Buri",
+    "author": "PattayaPatrol",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:DFC_6118_Grilled_marinated_beef_skewers_sizzling_with_caramelized_edges_-_a_popular_street_food_snack_from_Sattahip_Chon_Buri.jpg"
+  },
+  "spiedini-manzo-bbq": {
+    "source": "commons",
+    "alt": "Spiedini di manzo glassati con cipolla",
+    "title": "DFC 6147 Grilled beef skewers soaked in savory sauce garnished with fresh shallots and herbs - a flavorful street-food favorite from Klet Kaeo Sattahip",
+    "author": "PattayaPatrol",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:DFC_6147_Grilled_beef_skewers_soaked_in_savory_sauce_garnished_with_fresh_shallots_and_herbs_-_a_flavorful_street-food_favorite_from_Klet_Kaeo_Sattahip.jpg"
+  },
+  "pannocchia": {
+    "source": "commons",
+    "alt": "Pannocchia di mais grigliata",
+    "title": "Grilled corn on the cob (48286496447)",
+    "author": "spurekar",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_corn_on_the_cob_(48286496447).jpg"
+  },
+  "patata-dolce": {
+    "source": "commons",
+    "alt": "Patate dolci arrostite, aperte a metà su un piatto",
+    "title": "Gun-goguma 3",
+    "author": "촉촉지구",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Gun-goguma_3.jpg"
+  },
+  "champignon": {
+    "source": "commons",
+    "alt": "Funghi champignon sulla griglia",
+    "title": "Grilled mushrooms (4791356905)",
+    "author": "Emilian Robert Vicol from Com. Balanesti, Romania",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_mushrooms_(4791356905).jpg"
+  },
+  "melanzane": {
+    "source": "commons",
+    "alt": "Fette di melanzana grigliate",
+    "title": "Grilled Eggplant Over Miso Tahini Green Salad (2769234533)",
+    "author": "Kari Sullivan from Austin, TX",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_Eggplant_Over_Miso_Tahini_Green_Salad_(2769234533).jpg"
+  },
+  "zucchine": {
+    "source": "commons",
+    "alt": "Fette di zucchina grigliate",
+    "title": "Grilled zucchini",
+    "author": "Jeremy Keith",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_zucchini.jpg"
+  },
+  "patata": {
+    "source": "commons",
+    "alt": "Patate tagliate a metà e grigliate",
+    "title": "Pyry Gdynia (Grilled potatoes with dill butter)",
+    "author": "MOs810",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Pyry_Gdynia_(Grilled_potatoes_with_dill_butter).jpg"
+  },
+  "asparagi": {
+    "source": "commons",
+    "alt": "Asparagi verdi sulla griglia",
+    "title": "Grilled Asparagus - Grand Rapids Fulton Street Farmers Market (29096307492)",
+    "author": "A Healthier Michigan from Detroit, United States",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_Asparagus_-_Grand_Rapids_Fulton_Street_Farmers_Market_(29096307492).jpg"
+  },
+  "enoki": {
+    "source": "commons",
+    "alt": "Funghi enoki grigliati con cipollotto su un piatto ovale",
+    "title": "Grilled enoki-dake mushrooms (5993870972)",
+    "author": "pelican from Tokyo, Japan",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Grilled_enoki-dake_mushrooms_(5993870972).jpg"
+  },
+  "haemul-nurongji": {
+    "source": "commons",
+    "alt": "Riso croccante in brodo con frutti di mare e verdure",
+    "title": "Nurungji-tang",
+    "author": "Jirka Matousek",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Nurungji-tang.jpg"
+  },
+  "tofu-secco": {
+    "source": "menu",
+    "small": true,
+    "alt": "Insalata di tofu secco a striscioline, condita"
+  },
+  "manzo-cetriolo": {
+    "source": "menu",
+    "small": true,
+    "alt": "Insalata di manzo con cetriolo"
+  },
+  "insalata-legamento": {
+    "source": "menu",
+    "small": true,
+    "alt": "Insalata piccante di legamento bovino"
+  },
+  "insalata-radice": {
+    "source": "menu",
+    "small": true,
+    "alt": "Insalata piccante di radice"
+  },
+  "insalata-seppia": {
+    "source": "menu",
+    "small": true,
+    "alt": "Insalata di seppia con cetriolo"
+  },
+  "insalata-patata": {
+    "source": "menu",
+    "small": true,
+    "alt": "Insalata di patata a julienne"
+  },
+  "pancetta": {
+    "source": "menu",
+    "small": true,
+    "alt": "Fette di pancetta di maiale con lattuga, pronte per la griglia"
+  },
+  "ojingeo-deobbap": {
+    "source": "menu",
+    "small": true,
+    "alt": "Riso bianco coperto con calamari in salsa piccante"
+  },
+  "olio-aglio-tteokbokki": {
+    "source": "menu",
+    "small": true,
+    "alt": "Gnocchi di riso saltati con olio e aglio"
+  },
+  "gungjung-tteokbokki": {
+    "source": "menu",
+    "small": true,
+    "alt": "Gnocchi di riso in salsa di soia con verdure"
+  },
+  "cheese-buldak": {
+    "source": "menu",
+    "small": true,
+    "alt": "Pollo piccante coperto di mozzarella fusa su una piastra"
+  },
+  "spiedini-manzo-piccante": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di manzo marinati"
+  },
+  "spiedini-legamento": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di legamento bovino"
+  },
+  "spiedini-arteria": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di arteria del cuore"
+  },
+  "spiedini-trippa": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di trippa"
+  },
+  "spiedini-sausage": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di salsiccia"
+  },
+  "osso-morbido": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di osso morbido di maiale"
+  },
+  "cotenna": {
+    "source": "menu",
+    "small": true,
+    "alt": "Spiedini di cotenna"
   }
 }
