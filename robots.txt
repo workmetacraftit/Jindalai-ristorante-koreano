@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jindalaiprato.it/sitemap.xml
+Sitemap: https://jindalai-ristorante.vercel.app/sitemap.xml

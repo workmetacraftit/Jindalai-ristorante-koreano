@@ -8,6 +8,7 @@
 // Il resto di menu/index.html (testata, testi, piè di pagina) si modifica a mano: lo script
 // riscrive solo ciò che sta tra i commenti <!-- MENU…:START --> e <!-- MENU…:END -->.
 
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -72,23 +73,28 @@ function original(it) {
   return parts.join('<span aria-hidden="true"> · </span>');
 }
 
+// Le foto sono servite con cache di un anno: il codice dopo ?v= cambia quando cambia il file,
+// così chi ha già visitato il sito vede subito una foto sostituita.
+const version = (id) => createHash('sha1').update(readFileSync(join(root, 'assets', 'img', 'menu', `${id}-400.webp`))).digest('hex').slice(0, 8);
+
 function picture(it) {
   const ph = photos[it.photo];
-  const set = (ext) => PHOTO_SIZES.map((w) => `${PHOTO_DIR}${it.photo}-${w}.${ext} ${w}w`).join(', ');
+  const v = version(it.photo);
+  const set = (ext) => PHOTO_SIZES.map((w) => `${PHOTO_DIR}${it.photo}-${w}.${ext}?v=${v} ${w}w`).join(', ');
   const sizes = '(min-width: 700px) 128px, 104px';
   const credit = ph.source === 'commons' ? ` data-credit="${esc(`Foto: ${ph.author}, ${ph.license}`)}"` : '';
   const pic = [
     '              <picture>',
     `                <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">`,
     `                <source type="image/webp" srcset="${set('webp')}" sizes="${sizes}">`,
-    `                <img src="${PHOTO_DIR}${it.photo}-400.webp" width="400" height="400" loading="lazy" decoding="async" alt="${esc(ph.alt || it.name)}">`,
+    `                <img src="${PHOTO_DIR}${it.photo}-400.webp?v=${v}" width="400" height="400" loading="lazy" decoding="async" alt="${esc(ph.alt || it.name)}">`,
     '              </picture>'
   ];
   // Foto piccola: solo la miniatura, senza ingrandimento
   if (ph.small) return ['            <span class="mi__pic mi__pic--still">', ...pic, '            </span>'].join('\n');
   // Il link porta alla foto grande anche senza JavaScript; con JavaScript si apre in una finestra sulla pagina
   return [
-    `            <a class="mi__pic" href="${PHOTO_DIR}${it.photo}-800.webp" data-zoom="${esc(it.name)}"${credit}>`,
+    `            <a class="mi__pic" href="${PHOTO_DIR}${it.photo}-800.webp?v=${v}" data-zoom="${esc(it.name)}"${credit}>`,
     ...pic,
     `              <span class="vh">Ingrandisci la foto</span>`,
     '            </a>'

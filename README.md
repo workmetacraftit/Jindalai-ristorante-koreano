@@ -104,11 +104,22 @@ e tre. `node tools/build-menu.mjs` avvisa se non coincidono.
   stanno nella costante `DATA` di `hero-lights.js`. Se si cambia la foto dell'hero vanno
   ricalcolate (o si toglie il file dall'elenco `ANIMAZIONI`).
 
-## Prima di andare online
+## Dove è pubblicato
 
-Il dominio `https://www.jindalaiprato.it` è un segnaposto. Sostituiscilo con quello vero in
-`index.html`, `menu/index.html`, `storia/index.html` (canonical, Open Graph, dati strutturati),
-`robots.txt` e `sitemap.xml`, poi rilancia `node tools/build-menu.mjs`.
+Il sito è online su Vercel, all'indirizzo **https://jindalai-ristorante.vercel.app**
+(progetto `jindalai-ristorante`).
+
+Il collegamento tra Vercel e questo repository GitHub non è ancora attivo: ogni pubblicazione va
+lanciata a mano e scarica il sito da GitHub a un commit preciso. Per avere la pubblicazione
+automatica a ogni modifica basta installare l'app GitHub di Vercel sull'organizzazione
+`workmetacraftit` e collegare il repository al progetto (Vercel → progetto → Settings → Git).
+
+### Quando ci sarà un dominio proprio
+
+L'indirizzo `https://jindalai-ristorante.vercel.app` è scritto in `index.html`, `menu/index.html`,
+`storia/index.html` (canonical, Open Graph, dati strutturati), `robots.txt` e `sitemap.xml`.
+Dopo aver aggiunto il dominio su Vercel va sostituito in questi file, poi si rilancia
+`node tools/build-menu.mjs`.
 
 ## Modifiche frequenti
 
