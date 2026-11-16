@@ -324,9 +324,8 @@
     "url": "https://commons.wikimedia.org/wiki/File:Nongshim_Shin_Ramyun_black_20201123_003.jpg"
   },
   "haemul-tteokbokki": {
-    "source": "menu",
-    "small": true,
-    "alt": "Gnocchi di riso in salsa piccante con cozze"
+    "source": "ai",
+    "alt": "Gnocchi di riso in salsa rossa piccante con cozze, calamari e gamberi"
   },
   "chicken": {
     "source": "commons",
@@ -347,9 +346,8 @@
     "url": "https://commons.wikimedia.org/wiki/File:Godeungeo-gui.jpg"
   },
   "bulgoghi": {
-    "source": "menu",
-    "small": true,
-    "alt": "Manzo marinato saltato con verdure su una piastra"
+    "source": "ai",
+    "alt": "Manzo marinato saltato con cipolla e carota su una piastra di ghisa"
   },
   "dubu-kimchi": {
     "source": "commons",
@@ -496,94 +494,76 @@
     "url": "https://commons.wikimedia.org/wiki/File:Nurungji-tang.jpg"
   },
   "tofu-secco": {
-    "source": "menu",
-    "small": true,
-    "alt": "Insalata di tofu secco a striscioline, condita"
+    "source": "ai",
+    "alt": "Insalata di tofu secco a striscioline con olio piccante, cetriolo e carota"
   },
   "manzo-cetriolo": {
-    "source": "menu",
-    "small": true,
-    "alt": "Insalata di manzo con cetriolo"
+    "source": "ai",
+    "alt": "Insalata piccante di manzo a fettine con cetriolo"
   },
   "insalata-legamento": {
-    "source": "menu",
-    "small": true,
-    "alt": "Insalata piccante di legamento bovino"
+    "source": "ai",
+    "alt": "Insalata piccante di legamento bovino a striscioline"
   },
   "insalata-radice": {
-    "source": "menu",
-    "small": true,
-    "alt": "Insalata piccante di radice"
+    "source": "ai",
+    "alt": "Insalata di radice a striscioline in salsa rossa piccante"
   },
   "insalata-seppia": {
-    "source": "menu",
-    "small": true,
-    "alt": "Insalata di seppia con cetriolo"
+    "source": "ai",
+    "alt": "Insalata piccante di seppia con cetriolo"
   },
   "insalata-patata": {
-    "source": "menu",
-    "small": true,
-    "alt": "Insalata di patata a julienne"
+    "source": "ai",
+    "alt": "Insalata di patata a julienne con olio piccante"
   },
   "pancetta": {
-    "source": "menu",
-    "small": true,
-    "alt": "Fette di pancetta di maiale con lattuga, pronte per la griglia"
+    "source": "ai",
+    "alt": "Fette di pancetta di maiale sulla griglia da tavolo, con lattuga e salsa"
   },
   "ojingeo-deobbap": {
-    "source": "menu",
-    "small": true,
-    "alt": "Riso bianco coperto con calamari in salsa piccante"
+    "source": "ai",
+    "alt": "Riso bianco con calamari saltati in salsa rossa piccante"
   },
   "olio-aglio-tteokbokki": {
-    "source": "menu",
-    "small": true,
-    "alt": "Gnocchi di riso saltati con olio e aglio"
+    "source": "ai",
+    "alt": "Gnocchi di riso saltati con olio e aglio dorato"
   },
   "gungjung-tteokbokki": {
-    "source": "menu",
-    "small": true,
-    "alt": "Gnocchi di riso in salsa di soia con verdure"
+    "source": "ai",
+    "alt": "Gnocchi di riso in salsa di soia con manzo e verdure"
   },
   "cheese-buldak": {
-    "source": "menu",
-    "small": true,
-    "alt": "Pollo piccante coperto di mozzarella fusa su una piastra"
+    "source": "ai",
+    "alt": "Pollo piccante coperto di mozzarella fusa su una piastra di ghisa"
   },
   "spiedini-manzo-piccante": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di manzo marinati"
+    "source": "ai",
+    "alt": "Spiedini di manzo grigliati coperti di spezie rosse piccanti"
   },
   "spiedini-legamento": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di legamento bovino"
+    "source": "ai",
+    "alt": "Spiedini di legamento bovino grigliati, chiari e dorati"
   },
   "spiedini-arteria": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di arteria del cuore"
+    "source": "ai",
+    "alt": "Spiedini di arteria del cuore grigliati, a piccoli anelli chiari"
   },
   "spiedini-trippa": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di trippa"
+    "source": "ai",
+    "alt": "Spiedini di trippa grigliati"
   },
   "spiedini-sausage": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di salsiccia"
+    "source": "ai",
+    "alt": "Tre salsicce grigliate infilzate su spiedini"
   },
   "osso-morbido": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di osso morbido di maiale"
+    "source": "ai",
+    "alt": "Spiedini di osso morbido di maiale grigliati"
   },
   "cotenna": {
-    "source": "menu",
-    "small": true,
-    "alt": "Spiedini di cotenna"
+    "source": "ai",
+    "alt": "Spiedini di cotenna di maiale grigliati"
   },
   "spiedini-cuore": {
     "source": "commons",
@@ -647,5 +627,41 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "url": "https://commons.wikimedia.org/wiki/File:Deep_fried_mantou.jpg"
+  },
+  "spiedini-rene-agnello": {
+    "source": "ai",
+    "alt": "Spiedini di rene d'agnello grigliati con cumino e peperoncino"
+  },
+  "spiedini-fegato": {
+    "source": "ai",
+    "alt": "Spiedini di fegato grigliati"
+  },
+  "spiedini-milza": {
+    "source": "ai",
+    "alt": "Spiedini di milza grigliati"
+  },
+  "spiedini-rene": {
+    "source": "ai",
+    "alt": "Spiedini di rene di maiale grigliati"
+  },
+  "erba-cipolla": {
+    "source": "ai",
+    "alt": "Mazzetti di erba cipolla grigliati su spiedini"
+  },
+  "spiedini-aglio": {
+    "source": "ai",
+    "alt": "Spiedini di spicchi d'aglio grigliati"
+  },
+  "spezie": {
+    "source": "ai",
+    "alt": "Piattino con due spezie in polvere: peperoncino e cumino, arachidi e sesamo"
+  },
+  "manzo-coriandolo": {
+    "source": "ai",
+    "alt": "Insalata di manzo a fettine con coriandolo fresco e sesamo"
+  },
+  "bibimbap-tonno": {
+    "source": "ai",
+    "alt": "Ciotola di riso con tonno, lattuga, verdure, funghi e uovo al centro"
   }
 }

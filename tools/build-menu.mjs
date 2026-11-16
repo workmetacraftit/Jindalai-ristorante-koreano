@@ -82,7 +82,10 @@ function picture(it) {
   const v = version(it.photo);
   const set = (ext) => PHOTO_SIZES.map((w) => `${PHOTO_DIR}${it.photo}-${w}.${ext}?v=${v} ${w}w`).join(', ');
   const sizes = '(min-width: 700px) 128px, 104px';
-  const credit = ph.source === 'commons' ? ` data-credit="${esc(`Foto: ${ph.author}, ${ph.license}`)}"` : '';
+  // Testo che compare sotto la foto ingrandita quando non ritrae il piatto del ristorante
+  const caption = ph.source === 'commons' ? `Foto indicativa. Foto: ${ph.author}, ${ph.license}`
+    : ph.source === 'ai' ? 'Immagine illustrativa, generata con l\u2019intelligenza artificiale' : '';
+  const credit = caption ? ` data-credit="${esc(caption)}"` : '';
   const pic = [
     '              <picture>',
     `                <source type="image/avif" srcset="${set('avif')}" sizes="${sizes}">`,
@@ -176,25 +179,33 @@ const [year, month] = data.updated.split('-').map(Number);
 const dateHtml = `${MESI[month - 1]} ${year}`;
 
 /* ---------- foto: avviso e crediti ---------- */
-// Le foto prese da archivi liberi non ritraggono i piatti del ristorante: va detto, e gli autori vanno citati.
+// Le foto d'archivio e le immagini generate non ritraggono i piatti del ristorante: va detto,
+// e gli autori delle foto d'archivio vanno citati (lo chiede la licenza).
 const stock = [...used.keys()].filter((id) => photos[id].source === 'commons');
-const noteHtml = stock.length ? 'Le foto contrassegnate nei <a href="#crediti">crediti</a> sono indicative: il piatto servito può presentarsi diversamente.' : '';
-const creditsHtml = !stock.length ? '' : [
+const generated = [...used.keys()].filter((id) => photos[id].source === 'ai');
+const own = used.size - stock.length - generated.length;
+const noteHtml = stock.length || generated.length
+  ? `${own ? 'Molte immagini' : 'Le immagini'} del menu sono indicative: il piatto servito può presentarsi diversamente. Quali sono è scritto nei <a href="#crediti">crediti</a>.` : '';
+const list = (ids) => ids.map((id) => esc(used.get(id))).join(', ');
+const creditsHtml = !(stock.length || generated.length) ? '' : [
   '    <section class="credits" id="crediti" aria-labelledby="h-crediti">',
-  '      <h2 id="h-crediti">Crediti fotografici</h2>',
-  `      <p>Alcune foto del menu vengono da Wikimedia Commons e sono pubblicate con licenza libera. Sono state ritagliate e ridimensionate. Mostrano il piatto in generale, non la preparazione del ristorante.</p>`,
-  '      <details>',
-  `        <summary>Autori e licenze delle ${stock.length} foto</summary>`,
-  '        <ul class="credits__list">',
-  stock.map((id) => {
+  '      <h2 id="h-crediti">Foto e immagini del menu</h2>',
+  own ? `      <p>${own} foto sono del ristorante. Le altre servono a dare un'idea del piatto e non ritraggono la preparazione del ristorante.</p>`
+    : `      <p>Le immagini servono a dare un'idea del piatto e non ritraggono la preparazione del ristorante.</p>`,
+  generated.length ? `      <p><strong>Immagini generate con l'intelligenza artificiale (${generated.length}).</strong> ${list(generated)}.</p>` : '',
+  stock.length ? `      <p><strong>Foto da Wikimedia Commons (${stock.length}).</strong> Sono pubblicate con licenza libera e sono state ritagliate e ridimensionate.</p>` : '',
+  !stock.length ? '' : '      <details>',
+  !stock.length ? '' : `        <summary>Autori e licenze delle ${stock.length} foto</summary>`,
+  !stock.length ? '' : '        <ul class="credits__list">',
+  ...(!stock.length ? [] : [stock.map((id) => {
     const ph = photos[id];
     const lic = ph.licenseUrl ? `<a href="${esc(ph.licenseUrl)}" rel="license noopener">${esc(ph.license)}</a>` : esc(ph.license);
     return `          <li><b>${esc(used.get(id))}</b>: <a href="${esc(ph.url)}" rel="noopener">«${esc(ph.title)}»</a> di ${esc(ph.author)}, ${lic}.</li>`;
-  }).join('\n'),
-  '        </ul>',
-  '      </details>',
+  }).join('\n')]),
+  stock.length ? '        </ul>' : '',
+  stock.length ? '      </details>' : '',
   '    </section>'
-].join('\n');
+].filter(Boolean).join('\n');
 
 /* ---------- dati strutturati (schema.org) ---------- */
 const offer = (price, name) => ({ '@type': 'Offer', ...(name ? { name } : {}), price: price.toFixed(2), priceCurrency: data.currency });
@@ -213,7 +224,7 @@ const ld = {
             ...(it.ko || it.zh ? { alternateName: [it.ko, it.zh].filter(Boolean) } : {}),
             ...(it.desc ? { description: it.desc } : {}),
             // solo le foto del ristorante: quelle d'archivio non ritraggono il piatto servito
-            ...(it.photo && photos[it.photo].source !== 'commons' && !photos[it.photo].small ? { image: `${SITE}${PHOTO_DIR}${it.photo}-800.webp` } : {}),
+            ...(it.photo && photos[it.photo].source === 'own' ? { image: `${SITE}${PHOTO_DIR}${it.photo}-800.webp` } : {}),
             ...(showPrices ? { offers: it.prices ? it.prices.map((p) => offer(p.price, p.label)) : offer(it.price) } : {})
           }))
         }))
@@ -247,7 +258,7 @@ put('MENU-CREDITS', creditsHtml || '\n');
 put('MENU-DATE', dateHtml, true);
 put('MENU-PHOTONOTE', noteHtml, true);
 writeFileSync(pagePath, page);
-console.log(`menu/index.html aggiornato: ${total} voci in ${ids.size} sezioni, ${used.size} con foto (${stock.length} da archivi liberi), prezzi ${showPrices ? 'visibili' : 'nascosti'}.`);
+console.log(`menu/index.html aggiornato: ${total} voci in ${ids.size} sezioni, ${used.size} con foto (${own} del ristorante, ${stock.length} da archivi liberi, ${generated.length} generate), prezzi ${showPrices ? 'visibili' : 'nascosti'}.`);
 
 /* ---------- controllo: testata e piè di pagina uguali nelle tre pagine ---------- */
 const block = (html, open, close) => {

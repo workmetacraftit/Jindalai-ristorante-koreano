@@ -143,7 +143,7 @@
     zoom.querySelector('b').textContent = link.getAttribute('data-zoom');
     var credito = link.getAttribute('data-credit');
     var nota = zoom.querySelector('span');
-    nota.textContent = credito ? 'Foto indicativa. ' + credito : '';
+    nota.textContent = credito || '';
     nota.hidden = !credito;
     document.documentElement.classList.add('zoom-open');
     zoom.showModal();

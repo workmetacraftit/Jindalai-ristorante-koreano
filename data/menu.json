@@ -30,7 +30,7 @@
           "items": [
             { "photo": "costina-agnello-sardo", "name": "Costina d'agnello sardo", "ko": "사르데냐 양갈비 구이", "zh": "撒丁岛小羊排", "price": 10 },
             { "photo": "costina-agnello", "name": "Costina d'agnello", "ko": "양갈비 구이", "price": 10 },
-            { "name": "Spiedini di rene d'agnello", "ko": "양신장 꼬치", "zh": "羊腰子", "price": 3 },
+            { "photo": "spiedini-rene-agnello", "name": "Spiedini di rene d'agnello", "ko": "양신장 꼬치", "zh": "羊腰子", "price": 3 },
             { "photo": "spiedini-agnello-sardo", "name": "Spiedini d'agnello sardo", "ko": "사르데냐 양꼬치", "zh": "撒丁岛小羊肉串", "price": 2.5 },
             { "photo": "spiedini-agnello", "name": "Spiedini d'agnello", "ko": "양 꼬치", "zh": "羊肉串", "price": 1.5 }
           ]
@@ -56,9 +56,9 @@
             { "photo": "spiedini-sausage", "name": "Spiedini di sausage", "ko": "소시지 꼬치", "zh": "王中王香肠串", "price": 1 },
             { "photo": "osso-morbido", "name": "Spiedini d'osso morbido", "ko": "오돌뼈 꼬치", "zh": "猪脆骨串", "price": 2 },
             { "photo": "cotenna", "name": "Spiedini di cotenna", "ko": "껍데기 꼬치", "zh": "猪皮串", "price": 1 },
-            { "name": "Spiedini di fegato", "ko": "간 꼬치", "zh": "猪肝串", "price": 1.5 },
-            { "name": "Spiedini di milza", "ko": "비장 꼬치", "zh": "沙肝串", "price": 1.5 },
-            { "name": "Spiedini di rene", "ko": "신장 꼬치", "zh": "猪腰子串", "price": 1.5 },
+            { "photo": "spiedini-fegato", "name": "Spiedini di fegato", "ko": "간 꼬치", "zh": "猪肝串", "price": 1.5 },
+            { "photo": "spiedini-milza", "name": "Spiedini di milza", "ko": "비장 꼬치", "zh": "沙肝串", "price": 1.5 },
+            { "photo": "spiedini-rene", "name": "Spiedini di rene", "ko": "신장 꼬치", "zh": "猪腰子串", "price": 1.5 },
             { "photo": "spiedini-cuore", "name": "Spiedini di cuore", "ko": "심장 꼬치", "zh": "猪心脏串", "price": 1.5 }
           ]
         },
@@ -95,18 +95,18 @@
             { "photo": "patata", "name": "Patata alla griglia", "ko": "감자 구이", "zh": "烤土豆", "price": 4 },
             { "photo": "patata-dolce", "name": "Patata dolce alla griglia", "ko": "고구마 구이", "zh": "烤地瓜", "price": 4 },
             { "photo": "cavolfiore", "name": "Cavolfiore alla griglia", "ko": "브로콜리 구이", "zh": "烤花菜", "price": 4 },
-            { "name": "Erba cipolla alla griglia", "ko": "부추 구이", "zh": "烤韭菜", "price": 2 },
+            { "photo": "erba-cipolla", "name": "Erba cipolla alla griglia", "ko": "부추 구이", "zh": "烤韭菜", "price": 2 },
             { "photo": "asparagi", "name": "Spiedini d'asparagi", "ko": "아스파라거스 꼬치", "zh": "芦笋串", "price": 2 },
             { "photo": "pannocchia", "name": "Spiedini di pannocchia", "ko": "옥수수 꼬치", "zh": "玉米串", "price": 2 },
             { "photo": "spiedini-pane", "name": "Spiedini di pane", "ko": "빵 꼬치", "zh": "馒头串", "price": 1 },
-            { "name": "Spiedini d'aglio", "ko": "마늘 꼬치", "zh": "大蒜串", "price": 1 },
+            { "photo": "spiedini-aglio", "name": "Spiedini d'aglio", "ko": "마늘 꼬치", "zh": "大蒜串", "price": 1 },
             { "photo": "piante-aglio", "name": "Spiedini di piante d'aglio", "ko": "마늘쫑 꼬치", "zh": "蒜苗串", "price": 1 }
           ]
         },
         {
           "id": "spezie", "title": "Per condire", "nav": false,
           "items": [
-            { "name": "Spezie per spiedini", "ko": "꼬치 양념", "zh": "串料", "price": 1 }
+            { "photo": "spezie", "name": "Spezie per spiedini", "ko": "꼬치 양념", "zh": "串料", "price": 1 }
           ]
         }
       ]
@@ -135,7 +135,7 @@
             { "photo": "tofu-secco", "n": 7, "name": "Insalata di tofu secco", "ko": "건두부 무침", "zh": "凉拌干豆腐", "price": 7, "spicy": true },
             { "photo": "manzo-cetriolo", "n": 8, "name": "Insalata di manzo con cetriolo", "ko": "소고기 오이 무침", "zh": "黄瓜拌牛肉", "price": 10, "spicy": true },
             { "photo": "golbaengi-muccim", "n": 9, "name": "Golbaengi muccim", "ko": "골뱅이 무침", "zh": "韩式拌螺", "desc": "Lumache, cetriolo, spaghetti di grano, salsa piccante", "price": 14, "spicy": true },
-            { "n": 10, "name": "Insalata di manzo con coriandolo", "ko": "소고기 무침", "zh": "拌牛腱子肉", "price": 10, "spicy": true },
+            { "photo": "manzo-coriandolo", "n": 10, "name": "Insalata di manzo con coriandolo", "ko": "소고기 무침", "zh": "拌牛腱子肉", "price": 10, "spicy": true },
             { "photo": "insalata-legamento", "n": 11, "name": "Insalata di legamento bovino", "ko": "소힘줄 무침", "zh": "拌牛板筋", "price": 10, "spicy": true },
             { "photo": "insalata-radice", "n": 12, "name": "Insalata di radice", "ko": "도라지 무침", "zh": "凉拌桔梗", "price": 10, "spicy": true },
             { "photo": "insalata-seppia", "n": 13, "name": "Insalata di seppia con cetriolo", "ko": "꼴뚜기 무침", "zh": "拌墨斗", "price": 12, "spicy": true, "frozen": true },
@@ -162,7 +162,7 @@
             { "photo": "bibimbap", "n": 24, "name": "Bibimbap", "ko": "돌솥 비빔밥", "zh": "石锅拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, manzo saltato in salsa BBQ, uova", "price": 10 },
             { "photo": "bibimbap-bbq", "n": 25, "name": "Bibimbap al BBQ", "ko": "불고기 비빔밥", "zh": "烧烤肉拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, doppio manzo saltato in salsa BBQ, uova", "price": 12 },
             { "photo": "bibimbap-vegetariano", "n": 26, "name": "Bibimbap vegetariano", "ko": "야채 비빔밥", "zh": "蔬菜拌饭", "desc": "Riso, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 10 },
-            { "n": 27, "name": "Bibimbap al tonno", "ko": "참치 비빔밥", "zh": "金枪鱼拌饭", "desc": "Riso, tonno, lattuga, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 12 },
+            { "photo": "bibimbap-tonno", "n": 27, "name": "Bibimbap al tonno", "ko": "참치 비빔밥", "zh": "金枪鱼拌饭", "desc": "Riso, tonno, lattuga, spinaci, funghi, carote, germogli di soia, zucchine, uova", "price": 12 },
             { "photo": "kimchi-bokkum-bap", "n": 28, "name": "Kimchi bokkum bap", "ko": "김치 볶음밥", "zh": "辣白菜炒饭", "desc": "Riso saltato con kimchi, uova", "price": 12 },
             { "photo": "kimbap-bbq", "n": 29, "name": "Kimbap al BBQ", "ko": "불고기 김밥", "zh": "烧烤肉紫菜卷", "desc": "Alghe, riso, manzo saltato in salsa bulgoghi, wurstel, rapa agrodolce, spinaci, carota, cetriolo, uova", "price": 10 },
             { "photo": "kimbap-tonno", "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
