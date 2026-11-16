@@ -146,13 +146,15 @@
           "id": "zuppe", "title": "Zuppe", "ko": "찌개", "zh": "汤类",
           "allergens": ["F"],
           "items": [
+            { "photo": "zuppa-kimchi-maiale", "n": 15, "name": "Zuppa di kimchi e maiale", "desc": "Kimchi, carne di maiale.", "price": 10 },
             { "photo": "duengiang-zighe", "n": 16, "name": "Duengiang Zighe", "ko": "된장찌개", "zh": "大酱汤", "desc": "Carne di maiale, tofu, patate, funghi, cavolo cinese, salsa di soia. Con riso bianco.", "price": 10 },
             { "photo": "dong-tae-zighe", "n": 17, "name": "Dong tae Zighe", "ko": "동태찌개", "desc": "Merluzzo, vongole, rapa, tofu, salsa piccante. Con riso bianco.", "price": 12, "spicy": true, "frozen": true, "allergens": ["B"] },
             { "photo": "sundubu-zighe", "n": 18, "name": "Haemul Sundubu Zighe", "ko": "해물 순두부찌개", "zh": "海鲜嫩豆腐汤", "desc": "Tofu morbido con frutti di mare misti. Con riso bianco.", "price": 10, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
             { "photo": "youkke-giang", "n": 19, "name": "Youkke Giang", "ko": "육개장", "zh": "辣牛肉汤", "desc": "Carne di manzo, spaghetti di fecola di patata, funghi, felce, uova. Con riso bianco.", "price": 12, "spicy": true },
             { "photo": "kimchi-zighe-tonno", "n": 20, "name": "Kimchi Zighe", "ko": "참치 김치찌개", "desc": "Kimchi, tonno, tofu. Con riso bianco.", "price": 12, "spicy": true },
             { "photo": "kimchi-zighe-maiale", "n": 21, "name": "Kimchi Zighe", "ko": "삼겹살 김치찌개", "zh": "五花肉泡菜汤", "desc": "Kimchi, carne di maiale, tofu. Con riso bianco.", "price": 10, "spicy": true },
-            { "photo": "bude-zighe", "n": 22, "name": "Bude Zighe", "ko": "부대찌개", "zh": "部队锅（2人份）", "desc": "Kimchi, ravioli, gnocchi di riso, wurstel, zucchine, carote, tofu, salsa piccante. Per 2 persone.", "price": 25, "spicy": true }
+            { "photo": "bude-zighe", "n": 22, "name": "Bude Zighe", "ko": "부대찌개", "zh": "部队锅（2人份）", "desc": "Kimchi, ravioli, gnocchi di riso, wurstel, zucchine, carote, tofu, salsa piccante. Per 2 persone.", "price": 25, "spicy": true },
+            { "photo": "dak-bokkeum-tang", "n": 23, "name": "Dak Bokkeum Tang", "ko": "닭 볶음탕", "desc": "Pollo, patate, zucchine, carote, gnocchi di riso, salsa piccante. Con riso bianco.", "price": 13, "spicy": true }
           ]
         },
         {

@@ -43,8 +43,10 @@ Per cambiare la data «menu aggiornato a…» si modifica `updated` in cima al f
 **I prezzi** restano nel file ma sul sito non si vedono: in cima a `data/menu.json` c'è
 `"showPrices": false`. Per mostrarli di nuovo basta scrivere `true` e rilanciare lo script.
 
-Due voci del menu cartaceo non sono state riportate perché sul menu risultano coperte o cancellate:
-la n. 15 e la n. 23.
+Due voci sul menu cartaceo sono coperte da etichette o cancellate a penna, e sono state riportate
+con quello che si legge: la n. 23 (Dak Bokkeum Tang, senza nome cinese) e la n. 15, di cui si
+leggono solo ingredienti e prezzo. Il nome «Zuppa di kimchi e maiale» della n. 15 è provvisorio:
+va sostituito con quello vero in `data/menu.json`.
 
 ### Le foto dei piatti
 
@@ -126,6 +128,7 @@ Dopo aver aggiunto il dominio su Vercel va sostituito in questi file, poi si ril
 ## Modifiche frequenti
 
 - **Orari**: tabella in `index.html`, blocco `openingHoursSpecification` e FAQ nel JSON-LD, oggetto `ORARI` in `main.js`.
+- **Ultimo orario prenotabile**: un'ora prima della chiusura (23:00). Costanti `CHIUSURA` e `ULTIMO_TAVOLO` in `main.js`; l'orario è scritto anche nella FAQ «Come si prenota» di `index.html`, due volte (testo e JSON-LD).
 - **Numero WhatsApp**: costante `WHATSAPP` in `main.js` e link `wa.me` nelle tre pagine.
 - Dopo aver cambiato CSS o JS, aumenta il numero dopo `?v=` nel riferimento a quel file
   (nelle pagine, oppure in `ANIMAZIONI` dentro `main.js` per i file di animazione).

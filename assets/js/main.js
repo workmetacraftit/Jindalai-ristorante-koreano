@@ -5,7 +5,8 @@
   // Orari per giorno della settimana (0 = domenica). null = chiuso. Chiusura a mezzanotte.
   var ORARI = { 0: 11, 1: 14, 2: null, 3: 14, 4: 14, 5: 11, 6: 11 };
   var GIORNI = ['domenica', 'lunedì', 'martedì', 'mercoledì', 'giovedì', 'venerdì', 'sabato'];
-  var ULTIMO_TAVOLO = 22.5; // ultimo orario prenotabile: 22:30
+  var CHIUSURA = 24;
+  var ULTIMO_TAVOLO = CHIUSURA - 1; // si prenota fino a un'ora prima della chiusura: 23:00
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
 

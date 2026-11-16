@@ -663,5 +663,13 @@
   "bibimbap-tonno": {
     "source": "ai",
     "alt": "Ciotola di riso con tonno, lattuga, verdure, funghi e uovo al centro"
+  },
+  "zuppa-kimchi-maiale": {
+    "source": "ai",
+    "alt": "Zuppa densa di kimchi e carne di maiale in una pentola di terracotta nera"
+  },
+  "dak-bokkeum-tang": {
+    "source": "ai",
+    "alt": "Stufato piccante di pollo con patate, zucchine, carote e gnocchi di riso"
   }
 }
