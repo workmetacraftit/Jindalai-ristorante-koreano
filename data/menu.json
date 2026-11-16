@@ -59,7 +59,7 @@
             { "name": "Spiedini di fegato", "ko": "간 꼬치", "zh": "猪肝串", "price": 1.5 },
             { "name": "Spiedini di milza", "ko": "비장 꼬치", "zh": "沙肝串", "price": 1.5 },
             { "name": "Spiedini di rene", "ko": "신장 꼬치", "zh": "猪腰子串", "price": 1.5 },
-            { "name": "Spiedini di cuore", "ko": "심장 꼬치", "zh": "猪心脏串", "price": 1.5 }
+            { "photo": "spiedini-cuore", "name": "Spiedini di cuore", "ko": "심장 꼬치", "zh": "猪心脏串", "price": 1.5 }
           ]
         },
         {
@@ -69,7 +69,7 @@
             { "photo": "ali-pollo", "name": "Spiedini d'ali di pollo", "ko": "닭날개 구이", "zh": "鸡翅", "price": 2.5, "spicy": true },
             { "photo": "spiedini-pollo", "name": "Spiedini di pollo", "ko": "닭 꼬치", "zh": "鸡肉串", "price": 1.5 },
             { "photo": "ventriglio-pollo", "name": "Spiedini di ventriglio di pollo", "ko": "닭똥집 꼬치", "zh": "鸡胗串", "price": 1.5 },
-            { "name": "Spiedini di uova di quaglia", "ko": "메추리알 꼬치", "zh": "鹌鹑蛋", "price": 1.5 }
+            { "photo": "uova-quaglia", "name": "Spiedini di uova di quaglia", "ko": "메추리알 꼬치", "zh": "鹌鹑蛋", "price": 1.5 }
           ]
         },
         {
@@ -94,13 +94,13 @@
             { "photo": "zucchine", "name": "Zucchine alla griglia", "ko": "애호박 구이", "zh": "烤小南瓜（角瓜）", "price": 4 },
             { "photo": "patata", "name": "Patata alla griglia", "ko": "감자 구이", "zh": "烤土豆", "price": 4 },
             { "photo": "patata-dolce", "name": "Patata dolce alla griglia", "ko": "고구마 구이", "zh": "烤地瓜", "price": 4 },
-            { "name": "Cavolfiore alla griglia", "ko": "브로콜리 구이", "zh": "烤花菜", "price": 4 },
+            { "photo": "cavolfiore", "name": "Cavolfiore alla griglia", "ko": "브로콜리 구이", "zh": "烤花菜", "price": 4 },
             { "name": "Erba cipolla alla griglia", "ko": "부추 구이", "zh": "烤韭菜", "price": 2 },
             { "photo": "asparagi", "name": "Spiedini d'asparagi", "ko": "아스파라거스 꼬치", "zh": "芦笋串", "price": 2 },
             { "photo": "pannocchia", "name": "Spiedini di pannocchia", "ko": "옥수수 꼬치", "zh": "玉米串", "price": 2 },
-            { "name": "Spiedini di pane", "ko": "빵 꼬치", "zh": "馒头串", "price": 1 },
+            { "photo": "spiedini-pane", "name": "Spiedini di pane", "ko": "빵 꼬치", "zh": "馒头串", "price": 1 },
             { "name": "Spiedini d'aglio", "ko": "마늘 꼬치", "zh": "大蒜串", "price": 1 },
-            { "name": "Spiedini di piante d'aglio", "ko": "마늘쫑 꼬치", "zh": "蒜苗串", "price": 1 }
+            { "photo": "piante-aglio", "name": "Spiedini di piante d'aglio", "ko": "마늘쫑 꼬치", "zh": "蒜苗串", "price": 1 }
           ]
         },
         {
@@ -147,7 +147,7 @@
           "allergens": ["F"],
           "items": [
             { "photo": "duengiang-zighe", "n": 16, "name": "Duengiang Zighe", "ko": "된장찌개", "zh": "大酱汤", "desc": "Carne di maiale, tofu, patate, funghi, cavolo cinese, salsa di soia. Con riso bianco.", "price": 10 },
-            { "n": 17, "name": "Dong tae Zighe", "ko": "동태찌개", "desc": "Merluzzo, vongole, rapa, tofu, salsa piccante. Con riso bianco.", "price": 12, "spicy": true, "frozen": true, "allergens": ["B"] },
+            { "photo": "dong-tae-zighe", "n": 17, "name": "Dong tae Zighe", "ko": "동태찌개", "desc": "Merluzzo, vongole, rapa, tofu, salsa piccante. Con riso bianco.", "price": 12, "spicy": true, "frozen": true, "allergens": ["B"] },
             { "photo": "sundubu-zighe", "n": 18, "name": "Haemul Sundubu Zighe", "ko": "해물 순두부찌개", "zh": "海鲜嫩豆腐汤", "desc": "Tofu morbido con frutti di mare misti. Con riso bianco.", "price": 10, "spicy": true, "frozen": true, "allergens": ["B", "N"] },
             { "photo": "youkke-giang", "n": 19, "name": "Youkke Giang", "ko": "육개장", "zh": "辣牛肉汤", "desc": "Carne di manzo, spaghetti di fecola di patata, funghi, felce, uova. Con riso bianco.", "price": 12, "spicy": true },
             { "photo": "kimchi-zighe-tonno", "n": 20, "name": "Kimchi Zighe", "ko": "참치 김치찌개", "desc": "Kimchi, tonno, tofu. Con riso bianco.", "price": 12, "spicy": true },
@@ -168,7 +168,7 @@
             { "photo": "kimbap-tonno", "n": 30, "name": "Kimbap al tonno", "ko": "참치 김밥", "zh": "金枪鱼紫菜卷", "desc": "Alghe, riso, tonno, wurstel, rapa agrodolce, carota, cetriolo, uova", "price": 10 },
             { "photo": "kimbap-insalata", "n": 31, "name": "Kimbap all'insalata", "ko": "샐러드 김밥", "zh": "沙拉紫菜卷", "desc": "Alghe, riso, cavolo, wurstel, rapa agrodolce, cetriolo, uova, maionese", "price": 9 },
             { "photo": "ojingeo-deobbap", "n": 32, "name": "O ging o deobbap", "ko": "오징어 덮밥", "zh": "辣炒鱿鱼盖饭", "desc": "Riso coperto con calamari saltati in salsa piccante", "price": 12, "spicy": true },
-            { "name": "Riso in bianco", "ko": "밥", "zh": "白饭", "price": 1.5 }
+            { "photo": "riso-bianco", "name": "Riso in bianco", "ko": "밥", "zh": "白饭", "price": 1.5 }
           ]
         },
         {

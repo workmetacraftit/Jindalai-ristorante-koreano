@@ -584,5 +584,68 @@
     "source": "menu",
     "small": true,
     "alt": "Spiedini di cotenna"
+  },
+  "spiedini-cuore": {
+    "source": "commons",
+    "alt": "Spiedini di cuore sulla griglia a carbone",
+    "title": "Anticuchos - Grilled Beef Heart skewers",
+    "author": "Carly & Art",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Anticuchos_-_Grilled_Beef_Heart_skewers.jpg"
+  },
+  "cavolfiore": {
+    "source": "commons",
+    "alt": "Cimette di cavolfiore arrostite in una ciotola",
+    "title": "Plated roasted cauliflower 09",
+    "author": "Wheeler Cowperthwaite",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Plated_roasted_cauliflower_09.jpg"
+  },
+  "piante-aglio": {
+    "source": "commons",
+    "alt": "Steli d'aglio cotti con spicchi d'aglio",
+    "title": "Maneuljjongjangajji (pickled garlic scapes)",
+    "author": "Hyeon-Jeong Suk",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Maneuljjongjangajji_(pickled_garlic_scapes).jpg"
+  },
+  "riso-bianco": {
+    "source": "commons",
+    "alt": "Ciotola di riso bianco",
+    "title": "Steamed rice in bowl 01",
+    "author": "Anna Frodesiak",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File:Steamed_rice_in_bowl_01.jpg"
+  },
+  "dong-tae-zighe": {
+    "source": "commons",
+    "alt": "Zuppa di pesce rossa e piccante con cipollotto",
+    "title": "Maeun-tang 1",
+    "author": "대경라이프",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Maeun-tang_1.jpg"
+  },
+  "uova-quaglia": {
+    "source": "commons",
+    "alt": "Spiedini di uova di quaglia accanto ad altri spiedini",
+    "title": "Quaile-eggs",
+    "author": "Aciccone at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "url": "https://commons.wikimedia.org/wiki/File:Quaile-eggs.jpg"
+  },
+  "spiedini-pane": {
+    "source": "commons",
+    "alt": "Panini cinesi mantou dorati",
+    "title": "Deep fried mantou",
+    "author": "moriza of Flickr",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Deep_fried_mantou.jpg"
   }
 }
